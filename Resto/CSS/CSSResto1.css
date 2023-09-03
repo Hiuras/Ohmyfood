@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+}
+
+.logo {
+    display: flex;
+    width:162px;
+    height: 44px;
+    margin-top: 14px;
+    margin-left: 89px;
+    margin-right: 89px;
+    margin-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 19px;
+}
+
+.Headerimg {
+    width: 375px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.card {
+    position: absolute;
+    border-radius: 40px 40px 0px 0px;
+    background: var(--Background, #F6F6F6);
+    top: 13%;
+    width: 375px;
+    height: 1387px;
+}
+
+.card h2 {
+    padding-left: 17px;
+    padding-top: 31px;
+}
+
+.card h5 {
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.card p {
+    border-radius: 15.043px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+    width: 349px;
+    height: 69px;
+    padding: 15px;
+}
+
+.like {
+    position: absolute;
+    right: 10%;
+    top: 4%;
+}
