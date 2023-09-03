@@ -1,4 +1,8 @@
-.body {
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
     margin: 0px;
 }
 
@@ -24,7 +28,7 @@
 }
 
 .bouton {
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); 
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%)); 
     width: 218px;
     height: 50px;
     border-radius: 25px;
@@ -34,6 +38,11 @@
     margin-right: 75px;
     color: var(--White, #FFF); 
     margin-bottom: 57px;
+}
+
+.bouton:visited {
+    text-decoration: none;
+    color: var(--White, #FFF); 
 }
 
 .Backgroundhaut {
@@ -76,6 +85,7 @@
     gap: 5px;
 }
 
+/* Cartes */ 
 .card {
     border-radius: 15px;
     background: #FFF; 
@@ -98,11 +108,21 @@
     margin-left: 17px;
 }
 
+.card a:link {
+    text-decoration: none;
+}
+
+.card a:visited {
+    color: black;
+}
+
 .cardtitle img {
     width: 22px;
     height: 21px;
 }
  
+/* Footer */ 
+
 .Footer {
     background: var(--Grey, #353535);
 }
