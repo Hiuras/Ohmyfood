@@ -1,0 +1,122 @@
+.body {
+    margin: 0px;
+}
+
+.logo {
+    display: flex;
+    width:162px;
+    height: 44px;
+    margin-top: 14px;
+    margin-left: 89px;
+    margin-right: 89px;
+    margin-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 19px;
+}
+
+.localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+    background-color: var(--Grey-2, #EAEAEA);;
+    width: 375px;
+}
+
+.bouton {
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)); 
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-left-style: solid;
+    margin-left: 82px;
+    margin-right: 75px;
+    color: var(--White, #FFF); 
+    margin-bottom: 57px;
+}
+
+.Backgroundhaut {
+    background: var(--Background, #F6F6F6);
+    width: 375px; 
+}
+
+.Backgroundhaut h2 {
+    width: 275px;
+    height: 65px;
+    margin-left: 82px;
+    margin-right: 75px;
+    padding-top: 39px;
+    margin-top: 0px;
+}
+
+.Backgroundhaut p {
+    width: 315px;
+    height: 46px;
+    margin-left: 82px;
+    margin-right: 75px;
+}
+
+.Restobutton {
+    border-radius: 20px;
+    background: var(--Background, #F6F6F6); 
+    border-width: 2px;
+    border-style: solid;
+    width: 322px;
+    height: 72.4px;
+    margin-left: 32px;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Restobutton img {
+    width: 16px;
+    height: 15.52px;
+    gap: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    background: #FFF; 
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    margin-left: 17px;
+    border-radius: 20px;
+    width: 346px;
+    height: 324px;
+    margin-top: 18px;
+}
+
+.card img {
+    width: 346px;
+    height: 231px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cardtitle {
+    margin-left: 17px;
+}
+
+.cardtitle img {
+    width: 22px;
+    height: 21px;
+}
+ 
+.Footer {
+    background: var(--Grey, #353535);
+}
+
+.Footer img {
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer p, h1 {
+color:  var(--White, #FFF);;
+}
+
+
+@media screen (max-width : 375px){
+
+}
