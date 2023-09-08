@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+}
+
+.logo {
+    display: flex;
+    width:162px;
+    height: 44px;
+    margin-top: 14px;
+    margin-left: 89px;
+    margin-right: 89px;
+    margin-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 19px;
+}
+
+.Headerimg {
+    width: 375px;
+    height: 275px;
+    object-fit: cover;
+    margin-bottom: -71px;
+}
+
+.BackButton {
+    position: fixed;
+    left: 5%;
+    top: 1%;
+}
+
+.card {
+    position: relative;
+    border-radius: 40px 40px 0px 0px;
+    background: var(--Background, #F6F6F6);
+    width: 375px;
+    height: 1590px;
+}
+
+.card h2 {
+    padding-left: 17px;
+    padding-top: 31px;
+}
+
+.card h5 {
+    padding-top: 40px;
+    margin-left: 10px;
+    border-bottom: green 2px solid;
+    width: 13%;
+}
+
+.card p {
+    border-radius: 15.043px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+    width: 85%;
+    height: 3%;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.like {
+    position: absolute;
+    margin-left: 310px;
+    top: 2%;
+}
+
+.bouton {
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%)); 
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-left-style: solid;
+    margin-left: 82px;
+    margin-right: 75px;
+    color: var(--White, #FFF); 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.Footer {
+    background: var(--Grey, #353535);
+}
+
+.Footer img {
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer p, h1 {
+color:  var(--White, #FFF);;
+}
