@@ -1,346 +1,431 @@
-* {
-    font-family: 'Raleway', sans-serif;
-}
+    * {
+        font-family: 'Roboto';
+        font-style: normal; 
+    }
 
 
-body {
-    margin: 0px;
-}
+    body {
+        margin: 0px;
+    }
 
-.Directionrow {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo {
-    width: 200px;
-    height: 34px;
-}
-
-.localisation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: var(--Grey-2, #EAEAEA);
-}
-
-.Backgroundhaut {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: var(--Background, #F6F6F6);
-}
-
-
-.bouton {
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    width: 218px;
-    height: 50px;
-    border-radius: 25px;
-    border-width: 0px;
-    border-left-style: solid;
-}
-
-.FlexBoxResto {
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.Restobutton1 {
-    width: 322px;
-    height: 72px;
-    background: var(--Background, #F6F6F6);
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
-.Restobutton2 {
-    width: 322px;
-    height: 72px;
-    background: var(--Background, #F6F6F6);
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
-.Restobutton3 {
-    width: 322px;
-    height: 72px;
-    background: var(--Background, #F6F6F6);
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
-
-.card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 490px;
-    height: 251px;
-    background: #FFF;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.Footer {
-    display: flex;
-    flex-direction: row;
-    background: var(--Grey, #353535);
-    width: 100%;
-    height: 114px;
-}
-
-@media screen and (max-width: 1024px) {
+    .Directionrow {
+        display: flex;
+        flex-direction: row;
+    }
 
     .logo {
         width: 200px;
         height: 34px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-
-.logo {
-        display: flex;
-        width: 162px;
-        height: 44px;
-        margin-top: 14px;
-        margin-left: 89px;
-        margin-right: 89px;
-        margin-bottom: 13px;
-        padding-left: 16px;
-        padding-right: 19px;
+        margin-left: 42%;
     }
 
-.localisation {
+    .localisation {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 17px;
-        background-color: var(--Grey-2, #EAEAEA);
-        ;
-        width: 100%;
+        background: var(--Grey-2, #EAEAEA);
     }
 
-.bouton {
-        background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+    .Backgroundhaut {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: var(--Background, #F6F6F6);
+    }
+
+
+    .bouton {
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
         width: 218px;
         height: 50px;
         border-radius: 25px;
         border-width: 0px;
         border-left-style: solid;
-        margin-left: 27px;
-        color: var(--White, #FFF);
-        margin-bottom: 57px;
+    }
+
+    .FlexBoxResto {
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .Restobutton1 {
+        width: 322px;
+        height: 72px;
+        background: var(--Background, #F6F6F6);
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .Restobutton2 {
+        width: 322px;
+        height: 72px;
+        background: var(--Background, #F6F6F6);
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .Restobutton3 {
+        width: 322px;
+        height: 72px;
+        background: var(--Background, #F6F6F6);
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+    
+
+    .FlexBoxCard {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        display: grid;
-        justify-self: center;
+        margin: 30px;
     }
 
-.bouton:visited {
-        text-decoration: none;
-        color: var(--White, #FFF);
-    }
-
-.Backgroundhaut {
-        background: var(--Background, #F6F6F6);
-        width: 100%;
-        display: grid;
-        justify-content: center;
-    }
-
-.Backgroundhaut h2 {
-        width: 75%;
-        height: 65px;
-        margin-left: 25%;
-        padding-top: 39px;
-        margin-top: 0px;
-    }
-
-.Backgroundhaut p {
-        width: 70%;
-        height: 46px;
-        margin-left: 25%;
-    }
-
-.Restobutton1 {
-        border-radius: 20px;
-        background: var(--Background, #F6F6F6);
-        border-width: 2px;
-        border-style: solid;
-        width: 90%;
-        height: 72.4px;
-        margin-left: 32px;
-        margin-bottom: 18px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    }
-
-.Restobutton2 {
-        border-radius: 20px;
-        background: var(--Background, #F6F6F6);
-        border-width: 2px;
-        border-style: solid;
-        width: 90%;
-        height: 72.4px;
-        margin-left: 32px;
-        margin-bottom: 18px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    }
-
-.Restobutton3 {
-        border-radius: 20px;
-        background: var(--Background, #F6F6F6);
-        border-width: 2px;
-        border-style: solid;
-        width: 90%;
-        height: 72.4px;
-        margin-left: 32px;
-        margin-bottom: 18px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    }
-
-.Restobutton1 img {
-        width: 16px;
-        height: 15.52px;
-        gap: 5px;
-    }
-
-.Restobutton1 p {
-        position: absolute;
-        margin-top: -6px;
-        left: 20px;
-        background: var(--Primary, #9356DC);
-        border-radius: 100%;
-        width: 25px;
-        height: 20px;
+    .Box1 {
         display: flex;
-        padding-top: 9px;
-        padding-right: 5px;
-        justify-content: center;
-        color: var(--White, #FFF);
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    width: 100%;
     }
 
-.Restobutton2 p {
-        position: absolute;
-        margin-top: -4px;
-        background: var(--Primary, #9356DC);
-        border-radius: 100%;
-        width: 25px;
-        height: 20px;
+    .Box2 {
         display: flex;
-        padding-top: 9px;
-        padding-right: 5px;
-        justify-content: center;
-        margin-left: -19px;
-        color: var(--White, #FFF);
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 30px;
+    width: 100%;
     }
 
-.Restobutton3 p {
-        position: absolute;
-        margin-top: 0px;
-        margin-left: -19px;
-        background: var(--Primary, #9356DC);
-        border-radius: 100%;
-        width: 25px;
-        height: 20px;
-        display: flex;
-        padding-top: 9px;
-        padding-right: 5px;
-        justify-content: center;
-        color: var(--White, #FFF);
-    }
-
-    /* Cartes */
-.card {
-        display: block;
-        border-radius: 15px;
+    .card {
+        width: 46%;
+        height: auto;
         background: #FFF;
+        border-radius: 15px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-        margin-left: 17px;
-        border-radius: 20px;
-        width: 91%;
-        height: 324px;
-        margin-top: 18px;
     }
 
-.card img {
+    .card a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card img {
         width: 100%;
         height: 231px;
         object-fit: cover;
-        border-radius: 15px;
     }
 
-.cardtitle {
-        margin-left: 17px;
-    }
-
-.card a:link {
-        text-decoration: none;
-        color: black;
-    }
-
-.card a:visited {
-        color: black;
-    }
-
-.cardtitle img {
-        width: 22px;
-        height: 21px;
-    }
-
-.etiquette {
+    .etiquette {
         position: absolute;
-        margin-left: 65%;
-        margin-top: 30px;
-        background: var(--Green, #99E2D0);
-        width: 23%;
-        justify-content: center;
-        border-radius: 5px;
-        display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: var(--Green-Font, #008766);
+    margin-left: 7%;
+    margin-top: 30px;
+    background: var(--Green, #99E2D0);
+    width: 7%;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Green-Font, #008766);
     }
 
-.etiquette2 {
+    .etiquette2 {
         position: absolute;
-        margin-left: 65%;
-        margin-top: 30px;
-        background: var(--Green, #99E2D0);
-        width: 23%;
-        justify-content: center;
-        >>border-radius: 5px;
-        display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: var(--Green-Font, #008766);
+    margin-left: 7%;
+    margin-top: 30px;
+    background: var(--Green, #99E2D0);
+    width: 7%;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Green-Font, #008766);
     }
 
-/* Footer */
-
-.Footer {
-        display: block;
+    .Footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
         background: var(--Grey, #353535);
         width: 100%;
-        height: 100%;
+        height: 114px;
+        gap: 50px;
     }
 
-.Footer img {
-        display: flex;
-        flex-direction: row;
+    .Footer img {
+        width: 10%;
     }
 
-.Footer p,h1 {
-        color: var(--White, #FFF);
-        ;
+    .Footer h1 {
+        color: white;
+        margin-right: 20px;
     }
 
-}
+    .Footer p {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+    .logo {
+            display: flex;
+            width: 162px;
+            height: 44px;
+            margin-top: 14px;
+            margin-left: 89px;
+            margin-right: 89px;
+            margin-bottom: 13px;
+            padding-left: 16px;
+            padding-right: 19px;
+        }
+
+    .localisation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 17px;
+            background-color: var(--Grey-2, #EAEAEA);
+            ;
+            width: 100%;
+        }
+
+    .bouton {
+            background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+            width: 218px;
+            height: 50px;
+            border-radius: 25px;
+            border-width: 0px;
+            border-left-style: solid;
+            margin-left: 27px;
+            color: var(--White, #FFF);
+            margin-bottom: 57px;
+            align-items: center;
+            display: grid;
+            justify-self: center;
+        }
+
+    .bouton:visited {
+            text-decoration: none;
+            color: var(--White, #FFF);
+        }
+
+    .Backgroundhaut {
+            background: var(--Background, #F6F6F6);
+            width: 100%;
+            display: grid;
+            justify-content: center;
+        }
+
+    .Backgroundhaut h2 {
+            width: 75%;
+            height: 65px;
+            margin-left: 25%;
+            padding-top: 39px;
+            margin-top: 0px;
+        }
+
+    .Backgroundhaut p {
+            width: 70%;
+            height: 46px;
+            margin-left: 25%;
+        }
+
+    .FlexBoxResto {
+        display: block;
+        margin: 0;
+    }
+
+    .Restobutton1 {
+            border-radius: 20px;
+            background: var(--Background, #F6F6F6);
+            border-width: 2px;
+            border-style: solid;
+            width: 90%;
+            height: 72.4px;
+            margin-left: 32px;
+            margin-bottom: 18px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+
+    .Restobutton2 {
+            border-radius: 20px;
+            background: var(--Background, #F6F6F6);
+            border-width: 2px;
+            border-style: solid;
+            width: 90%;
+            height: 72.4px;
+            margin-left: 32px;
+            margin-bottom: 18px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+
+    .Restobutton3 {
+            border-radius: 20px;
+            background: var(--Background, #F6F6F6);
+            border-width: 2px;
+            border-style: solid;
+            width: 90%;
+            height: 72.4px;
+            margin-left: 32px;
+            margin-bottom: 18px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+
+    .Restobutton1 img {
+            width: 16px;
+            height: 15.52px;
+            gap: 5px;
+        }
+
+    .Restobutton1 p {
+            position: absolute;
+            margin-top: -6px;
+            left: 20px;
+            background: var(--Primary, #9356DC);
+            border-radius: 100%;
+            width: 25px;
+            height: 20px;
+            display: flex;
+            padding-top: 9px;
+            padding-right: 5px;
+            justify-content: center;
+            color: var(--White, #FFF);
+        }
+
+    .Restobutton2 p {
+            position: absolute;
+            margin-top: -4px;
+            background: var(--Primary, #9356DC);
+            border-radius: 100%;
+            width: 25px;
+            height: 20px;
+            display: flex;
+            padding-top: 9px;
+            padding-right: 5px;
+            justify-content: center;
+            margin-left: -19px;
+            color: var(--White, #FFF);
+        }
+
+    .Restobutton3 p {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: -19px;
+            background: var(--Primary, #9356DC);
+            border-radius: 100%;
+            width: 25px;
+            height: 20px;
+            display: flex;
+            padding-top: 9px;
+            padding-right: 5px;
+            justify-content: center;
+            color: var(--White, #FFF);
+        }
+
+        /* Cartes */
+
+        .Box1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .Box2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+    .card {
+            display: block;
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            margin-left: 17px;
+            border-radius: 20px;
+            width: 91%;
+            height: 324px;
+            margin-top: 18px;
+        }
+
+    .card img {
+            width: 100%;
+            height: 231px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+    .cardtitle {
+            margin-left: 17px;
+        }
+
+    .card a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+    .card a:visited {
+            color: black;
+        }
+
+    .cardtitle img {
+            width: 22px;
+            height: 21px;
+        }
+
+    .etiquette {
+            position: absolute;
+            margin-left: 49%;
+            margin-top: 30px;
+            background: var(--Green, #99E2D0);
+            width: 23%;
+            justify-content: center;
+            border-radius: 5px;
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--Green-Font, #008766);
+        }
+
+    .etiquette2 {
+            position: absolute;
+            margin-left: 49%;
+            margin-top: 30px;
+            background: var(--Green, #99E2D0);
+            width: 23%;
+            justify-content: center;
+            >>border-radius: 5px;
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--Green-Font, #008766);
+        }
+
+    /* Footer */
+
+    .Footer {
+            display: block;
+            background: var(--Grey, #353535);
+            width: 100%;
+            height: 100%;
+        }
+
+    .Footer img {
+            display: flex;
+            flex-direction: row;
+            width: 2%;
+        }
+
+    .Footer p,h1 {
+            color: var(--White, #FFF);
+            ;
+        }
+
+    }
