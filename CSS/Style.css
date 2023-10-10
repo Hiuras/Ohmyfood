@@ -1,0 +1,368 @@
+/* Cartes */
+/* Footer */
+* {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+}
+
+.Directionrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 200px;
+  height: 34px;
+  margin-left: 42%;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #EAEAEA;
+}
+
+.Backgroundhaut {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #F6F6F6;
+}
+
+.bouton {
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border-width: 0px;
+  border-left-style: solid;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+}
+
+.BoxResto {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 20px;
+}
+
+.FlexBoxResto {
+  width: 322px;
+  height: 72px;
+  border-radius: 20px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.FlexBoxCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.Box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.Box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.card {
+  width: 46%;
+  height: auto;
+  background: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card a {
+  color: black;
+  text-decoration: none;
+}
+.card img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+}
+
+.etiquette {
+  position: absolute;
+  margin-left: 31%;
+  margin-top: 30px;
+  background: var(--Green, #99E2D0);
+  width: 7%;
+  justify-content: center;
+  border-radius: 5px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--Green-Font, #008766);
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  background: var(--Grey, #353535);
+  width: 100%;
+  height: 114px;
+  gap: 50px;
+}
+.Footer img {
+  width: 10%;
+}
+.Footer h1 {
+  color: white;
+  margin-right: 20px;
+}
+.Footer p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: flex;
+    width: 25%;
+    margin-left: 40%;
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17px;
+    background-color: #EAEAEA;
+    width: 100%;
+  }
+  .bouton {
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-left-style: solid;
+    margin-left: 27px;
+    color: var(--White, #FFF);
+    margin-bottom: 57px;
+    align-items: center;
+    display: grid;
+    justify-self: center;
+  }
+  .bouton:visited {
+    text-decoration: none;
+    color: var(--White, #FFF);
+  }
+  .Backgroundhaut {
+    background: var(--Background, #F6F6F6);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .Backgroundhaut h2 {
+    width: 75%;
+    height: 65px;
+    margin-left: 25%;
+    padding-top: 39px;
+    margin-top: 0px;
+  }
+  .Backgroundhaut p {
+    width: 70%;
+    height: 46px;
+    margin-left: 25%;
+  }
+  .FlexBoxResto {
+    display: block;
+    margin: 0;
+  }
+  .BoxResto {
+    border-radius: 20px;
+    width: 90%;
+    height: 72.4px;
+    background: var(--Background, #F6F6F6);
+  }
+  .Restobutton1 {
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 32px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .Restobutton1 img {
+    width: 16px;
+    height: 15.52px;
+    gap: 5px;
+  }
+  .Restobutton1 p {
+    position: absolute;
+    margin-top: -6px;
+    left: 20px;
+    background: var(--Primary, #9356DC);
+    border-radius: 100%;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    padding-top: 9px;
+    padding-right: 5px;
+    justify-content: center;
+    color: var(--White, #FFF);
+  }
+  .Restobutton2 {
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 32px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .Restobutton2 p {
+    position: absolute;
+    margin-top: -4px;
+    background: var(--Primary, #9356DC);
+    border-radius: 100%;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    padding-top: 9px;
+    padding-right: 5px;
+    justify-content: center;
+    margin-left: -19px;
+    color: var(--White, #FFF);
+  }
+  .Restobutton3 {
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 32px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .Restobutton3 p {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -19px;
+    background: var(--Primary, #9356DC);
+    border-radius: 100%;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    padding-top: 9px;
+    padding-right: 5px;
+    justify-content: center;
+    color: var(--White, #FFF);
+  }
+  .FlexBoxCard {
+    background: var(--Background, #F6F6F6);
+    margin: 0;
+  }
+  .Box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    display: block;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    margin-left: 17px;
+    border-radius: 20px;
+    width: 91%;
+    height: 324px;
+    margin-top: 18px;
+  }
+  .card img {
+    width: 100%;
+    height: 231px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card a:link {
+    text-decoration: none;
+    color: black;
+  }
+  .card a:visited {
+    color: black;
+  }
+  .cardtitle {
+    margin-left: 17px;
+  }
+  .cardtitle img {
+    width: 22px;
+    height: 21px;
+  }
+  .etiquette {
+    position: absolute;
+    margin-left: 49%;
+    margin-top: 30px;
+    background: var(--Green, #99E2D0);
+    width: 23%;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Green-Font, #008766);
+  }
+  .etiquette2 {
+    position: absolute;
+    margin-left: 49%;
+    margin-top: 30px;
+    background: var(--Green, #99E2D0);
+    width: 23%;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Green-Font, #008766);
+  }
+  .Footer {
+    display: block;
+    background: var(--Grey, #353535);
+    width: 100%;
+    height: 100%;
+  }
+  .Footer img {
+    display: flex;
+    flex-direction: row;
+    width: 2%;
+  }
+  .Footer p {
+    color: var(--White, #FFF);
+  }
+  h1 {
+    color: var(--White, #FFF);
+  }
+  .Directionrow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=Style.css.map */
