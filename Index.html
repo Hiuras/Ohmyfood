@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>Oh My Food</title>
   <link rel="stylesheet" href="CSS/Style.css">
+  <script src="https://kit.fontawesome.com/5517abd3bf.js" crossorigin="anonymous">
+      </script>
+  <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
@@ -21,16 +25,16 @@
   </div>
 
 
-  <h3>Fonctionnement</h3>
+  <h3 class="BoxRestoTitle">Fonctionnement</h3>
   <div class="BoxResto">
     <button class="FlexBoxResto">
-      <p>1</p><img src="Images/Icones/mobile-screen-button.svg"> Choisissez un restaurant
+      <span class="Pin">1</span><p><i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant</p>
     </button>
     <button class="FlexBoxResto">
-      <p>2</p><img src="Images/Icones/list-ul.svg"> votre menu
+      <span class="Pin">2</span><p><i class="fa-solid fa-list"></i>composez votre menu</p>
     </button>
     <button class="FlexBoxResto">
-      <p>3</p><img src="Images/Icones/store.svg"> Dégustez au restaurant
+      <span class="Pin">3</span><p><i class="fa-solid fa-store"></i> Dégustez au restaurant</p>
     </button>
   </div>
 
@@ -46,6 +50,7 @@
       <div class="cardtitle">
         <h3>La palette du goût</h3>
         <p>Ménilmontant</p>
+        <i class="fa-regular fa-heart"></i>
       </div>
     </a>
   </div>
@@ -57,7 +62,7 @@
     <a href="Resto2/Resto1.html">
       <img src="Images/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
       <div class="cardtitle">
-        <h3>La Note enchantée</h3>
+        <h3>La note enchantée</h3>
         <p>Charonne</p>
       </div>
     </a>
@@ -89,20 +94,23 @@
 
   <div class="Footer">
     <h1>ohmyfood</h1>
-
+<div class="AideFooter">
     <div class="Directionrow">
-      <img src="Images/Icones/Fourchette.svg" alt="Fourchette">
-      <p>Proposer un restaurant</p>
+      <span>
+        <img src="Images/Icones/Fourchette.svg" alt="Fourchette">
+      Proposer un restaurant</span>
     </div>
 
     <div class="Directionrow">
-      <img src="Images/Icones/Poignées.svg" alt="Poignées">
-      <p>Devenir partenaire</p>
+      <span>
+        <img src="Images/Icones/Poignées.svg" alt="Poignées">
+      Devenir partenaire</span>
     </div>
 
     <p> Mentions légales</p>
 
     <p>Contact</p>
+  </div>
   </div>
 
 </body>
