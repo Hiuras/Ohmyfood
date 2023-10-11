@@ -23,12 +23,16 @@ body {
 	display: flex;
 	flex-direction: row;
 }
-.logo {
-	width: 200px;
-	height: 34px;
-	margin-left: 42%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.logodusite {
+	display: flex;
+	justify-content: center;
+		.logo {
+			display: flex;
+			width: 200px;
+			height: 34px;
+			margin-bottom: 32px;
+			margin-top: 30px;
+}
 }
 .localisation {
 	display: flex;
@@ -219,13 +223,22 @@ body {
 	}
 }
 @media screen and (max-width: 768px) {
-	.logo {
+	.logodusite{
 		display: flex;
-		width: 25%;
-		margin-left: 40%;
-		margin-top: 13px;
-		margin-bottom: 13px;
+		justify-content: center;
+			.logo {
+			display: flex;
+			width: 162px;
+			height: 44px;
+			margin-top: 14px;
+			margin-left: 89px;
+			margin-right: 89px;
+			margin-bottom: 13px;
+			padding-left: 16px;
+			padding-right: 19px;
+			font-family: $font-family_1;
 	}
+}
 	.localisation {
 		display: flex;
 		flex-direction: row;

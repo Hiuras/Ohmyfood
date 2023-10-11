@@ -9,13 +9,16 @@ $background-color_footer: #353535;
 body {
 	margin: 0px;
 }
-.logo {
-	display: flex;
-	margin-left: 40%;
-	width: 200px;
-	height: 34px;
-	margin-bottom: 32px;
-	margin-top: 30px;
+	.logodusite {
+		display: flex;
+		justify-content: center;
+			.logo {
+				display: flex;
+				width: 200px;
+				height: 34px;
+				margin-bottom: 32px;
+				margin-top: 30px;
+}
 }
 .BackButton {
 	position: absolute;
@@ -50,7 +53,7 @@ body {
 	h5 {
 		display: flex;
 		align-self: flex-start;
-		margin-left: 100px;
+		margin-left: 50px;
 		width: 275px;
 		height: 27px;
 		margin-bottom: 0px;
@@ -74,7 +77,7 @@ body {
 		background-color: $color_border;
 		display: block; 
 		align-self: flex-start;
-		margin-left: 100px;
+		margin-left: 50px;
 	  }
 }
 .bouton {
@@ -100,7 +103,7 @@ body {
 	height: 114px;
 	gap: 50px;
 	padding-bottom: 30px;
-	margin-top: 1140px;
+	margin-top: 1200px;
 	img {
 		width: 11px;
 		height: 13px;
@@ -137,18 +140,22 @@ body {
 	}
 
 @media screen and (max-width:768px) {
-	.logo {
+	.logodusite{
 		display: flex;
-		width: 162px;
-		height: 44px;
-		margin-top: 14px;
-		margin-left: 89px;
-		margin-right: 89px;
-		margin-bottom: 13px;
-		padding-left: 16px;
-		padding-right: 19px;
-		font-family: $font-family_1;
+		justify-content: center;
+			.logo {
+			display: flex;
+			width: 162px;
+			height: 44px;
+			margin-top: 14px;
+			margin-left: 89px;
+			margin-right: 89px;
+			margin-bottom: 13px;
+			padding-left: 16px;
+			padding-right: 19px;
+			font-family: $font-family_1;
 	}
+}
 	.Headerimg {
 		width: 100%;
 		height: 275px;
@@ -215,18 +222,24 @@ body {
 			}
 		}
 	}
-	.bouton {
-		background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
-		width: 218px;
-		height: 50px;
-		border-radius: 25px;
-		border-width: 0px;
-		border-left-style: solid;
-		margin-left: 82px;
-		margin-right: 75px;
-		color: $color_1;
-		margin-bottom: 40px;
-		margin-top: 40px;
+	
+	.btn {
+		display: flex;
+		justify-content: center;
+			.bouton {
+			background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+			width: 218px;
+			height: 50px;
+			border-radius: 25px;
+			border-width: 0px;
+			border-left-style: solid;
+			margin-left: 82px;
+			margin-right: 75px;
+			color: $color_1;
+			margin-bottom: 40px;
+			margin-top: 40px;
+			padding: 0;
+	}
 	}
 	.Footer {
 		display: flex;
