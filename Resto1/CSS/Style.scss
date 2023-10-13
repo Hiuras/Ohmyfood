@@ -68,8 +68,11 @@ body {
 		font-size: 28px;
 		font-family: $font-family_1;
 	}
-	.like {
+	.fa-heart {
 		margin-left: 24px;
+			&:hover {
+				color: $color_2;
+			}
 	}
 	.ma-ligne {
 		height: 3px;
@@ -78,7 +81,12 @@ body {
 		display: block; 
 		align-self: flex-start;
 		margin-left: 50px;
-	  }
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
 }
 .bouton {
 	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));

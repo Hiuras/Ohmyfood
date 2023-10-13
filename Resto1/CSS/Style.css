@@ -65,8 +65,11 @@ body {
   font-size: 28px;
   font-family: "Shrikhand";
 }
-.card .like {
+.card .fa-heart {
   margin-left: 24px;
+}
+.card .fa-heart:hover {
+  color: red;
 }
 .card .ma-ligne {
   height: 3px;
@@ -75,6 +78,11 @@ body {
   display: block;
   align-self: flex-start;
   margin-left: 50px;
+}
+.card span {
+  display: flex;
+  position: absolute;
+  left: 90%;
 }
 
 .bouton {

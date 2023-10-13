@@ -165,6 +165,13 @@ body {
 .card .cardtitle {
   padding-left: 18px;
 }
+.card .fa-heart {
+  margin-left: 66%;
+}
+.card .fa-heart:hover {
+  transform: scale(1.5);
+  color: red;
+}
 
 .etiquette {
   position: absolute;
@@ -254,7 +261,7 @@ body {
     border-width: 0px;
     border-left-style: solid;
     margin-left: 27px;
-    color: var(--White, #FFF);
+    color: #FFF;
     margin-bottom: 57px;
     align-items: center;
     display: grid;
@@ -262,7 +269,7 @@ body {
   }
   .bouton:visited {
     text-decoration: none;
-    color: var(--White, #FFF);
+    color: #FFF;
   }
   .Backgroundhaut {
     background: #F6F6F6;
@@ -384,7 +391,7 @@ body {
     padding-top: 22px;
     padding-left: 25px;
     margin-bottom: 16px;
-    color: var(--White, #FFF);
+    color: #FFF;
   }
   .Footer span {
     display: flex;
@@ -403,7 +410,7 @@ body {
     padding-bottom: 22px;
   }
   .Footer .AideFooter p {
-    color: var(--White, #FFF);
+    color: #FFF;
     padding-left: 25px;
     margin-top: 0px;
     margin-bottom: 0px;

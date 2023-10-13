@@ -1,7 +1,6 @@
 $color_1: black;
 $color_2: var(--Green-Font, #008766);
 $color_3: #FFF;
-$color_4: var(--White, #FFF);
 $color_5:#99E2D0;
 $color_icons: #7E7E7E;
 $color_CarteResto: #9356DC;
@@ -168,6 +167,13 @@ body {
 	.cardtitle {
 		padding-left: 18px;
 	}
+	.fa-heart {
+		margin-left: 66%;
+			&:hover {
+				transform: scale(1.5);
+				color: red;
+			}
+	}
 }
 
 .etiquette {
@@ -256,14 +262,14 @@ body {
 		border-width: 0px;
 		border-left-style: solid;
 		margin-left: 27px;
-		color: $color_4;
+		color: $color_3;
 		margin-bottom: 57px;
 		align-items: center;
 		display: grid;
 		justify-self: center;
 		&:visited {
 			text-decoration: none;
-			color: $color_4;
+			color: $color_3;
 		}
 	}
 	.Backgroundhaut {
@@ -390,7 +396,7 @@ body {
 			padding-top: 22px;
 			padding-left: 25px;
 			margin-bottom: 16px;
-			color: $color_4;
+			color: $color_3;
 		}
 		span {
 		display: flex;
@@ -408,7 +414,7 @@ body {
 		flex-direction: column;
 		padding-bottom: 22px;
 			p{
-				color: $color_4;
+				color: $color_3;
 				padding-left: 25px;
 				margin-top: 0px;
   				margin-bottom: 0px;
