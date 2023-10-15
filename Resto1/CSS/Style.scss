@@ -8,6 +8,8 @@ $background-color_footer: #353535;
 $anim-color: #99E2D0;
 $gradiant: linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%);
 $card-color: #F6F6F6;
+$animationbouton: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+$btn: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 
 body {
 	margin: 0px;
@@ -47,7 +49,7 @@ body {
 		border-radius: 15.043px;
 		background: $color_3;
 		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-		width: 92%;
+		width: 90%;
 		height: 3%;
 		padding: 15px;
 		margin-left: 10px;
@@ -79,8 +81,8 @@ body {
 	}
 	.fa-heart {
 		margin-left: 24px;
-			&:hover {
-				color: $color_2;
+			&:active {
+				
 			}
 	}
 	.ma-ligne {
@@ -118,6 +120,8 @@ body {
 		.cardanim3 {
 			left: 90%;
 			bottom: 66.4%;
+			width: 70px;
+			height: 59px;
 }
 		.cardanim2 {
 			left: 90%;
@@ -154,7 +158,7 @@ body {
 }
 
 .bouton {
-	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+	background: $btn;
 	width: 218px;
 	height: 50px;
 	border-radius: 25px;
@@ -165,6 +169,10 @@ body {
 	color: $color_1;
 	margin-bottom: 40px;
 	margin-top: 40px;
+		&:hover {
+			opacity: 70%;
+			transition-duration: 1s;
+		}
 }
 
 .Footer {
@@ -251,7 +259,7 @@ body {
 		font-size: 13px;
 		z-index: 1;
 		&:hover {
-			transform: scaleX(0.93);
+			transform: scaleX(0.90);
 			transform-origin: left;
 			transition: transform 0.3s ease;
 		}
@@ -276,8 +284,8 @@ body {
 	}
 	.fa-heart {
 		margin-left: 24px;
-			&:hover {
-				color: $color_2;
+		&:active {
+				color: $gradiant;
 			}
 	}
 	.ma-ligne {
@@ -293,69 +301,58 @@ body {
 		position: absolute;
 		left: 90%;
 	}
-}
+	}
 
-.cardcontainer {
-	width: 100%;
-  	margin-left: 60px;
-	z-index: 99;
-		.cardanim3 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border-radius: 25px;
-		width: 70%;
-		margin-left: 15%;
-		i{
-			background-color: $anim-color;
-			width: 70px;
-			height: 59px;
-			align-items: center;
-  			display: flex;
-  			justify-content: center;
-			border-top-right-radius: 15px;
-			border-bottom-right-radius: 15px;
-			margin-top: -7.3%;
-			margin-left: 82%;
-			margin-right: 11px;
-			position: absolute;
-			color: $color_3;
-			z-index: -1;
-			bottom: 66.4%;
-  			left: 6.7%;
-		}
-}
-		.cardanim2 {
-		background-color: $anim-color;
-		color: $color_3;
-		width: 70px;
-		height: 59px;
-		position: absolute;
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		left: 88.7%;
-		bottom: 73.6%;
-		z-index: -1;
-}
-		.cardanim {
-			background-color: $anim-color;
-			color: $color_3;
-			width: 70px;
-			height: 59px;
-			position: absolute;
-			align-items: center;
-			display: flex;
-			justify-content: center;
-			border-top-right-radius: 15px;
-			border-bottom-right-radius: 15px;
-			left: 88.7%;
-			bottom: 80.7%;
-			z-index: -1;
-}
-}
+
+	.cardcontainer {
+		width: 100%;
+		  margin-left: 60px;
+		  margin-right: 36px;
+		z-index: 99;
+			.animation {
+				background-color: $anim-color;
+				color: $color_3;
+				width: 70px;
+				height: 59px;
+				position: absolute;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+				left: 84.9%;
+			}
+			.cardanim3 {
+				bottom: 66.4%;
+				width: 70px;
+				height: 59px;
+	}
+			.cardanim2 {
+				bottom: 73.6%;
+	}
+			.cardanim {
+				bottom: 80.7%;
+	}
+			.cardanim4{
+				bottom: 53.4%;
+			}
+			.cardanim5 {
+				bottom: 46.4%;
+			}
+			.cardanim6{
+				bottom: 39%;
+			}
+			.cardanim7 {
+				bottom: 26.3%;
+			}
+			.cardanim8 {
+				bottom: 19.1%;
+			}
+			.cardanim9 {
+				bottom: 11.7%;
+			}
+	}
 
 .bouton {
 	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
@@ -405,7 +402,6 @@ body {
 			font-family: $font-family_2;
 			font-size: 16px;
 			font-style: normal;
-			padding-left: 50px;
 			}
 			.fa-handshake-angle{
 				color: $color_3;
