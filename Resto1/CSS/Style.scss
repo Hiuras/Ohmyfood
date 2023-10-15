@@ -102,6 +102,203 @@ body {
 	width: 100%;
   	margin-left: 60px;
 	z-index: 99;
+		.animation {
+			background-color: $anim-color;
+			color: $color_3;
+			width: 70px;
+			height: 59px;
+			position: absolute;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			z-index: -1;
+		}
+		.cardanim3 {
+			left: 90%;
+			bottom: 66.4%;
+}
+		.cardanim2 {
+			left: 90%;
+			bottom: 73.6%;
+}
+		.cardanim {
+			left: 90%;
+			bottom: 80.7%;
+}
+		.cardanim4{
+			left: 90%;
+			bottom: 53.4%;
+		}
+		.cardanim5 {
+			left: 90%;
+			bottom: 46.4%;
+		}
+		.cardanim6{
+			left: 90%;
+			bottom: 39%;
+		}
+		.cardanim7 {
+			left: 90%;
+			bottom: 26.3%;
+		}
+		.cardanim8 {
+			left: 90%;
+			bottom: 19.1%;
+		}
+		.cardanim9 {
+			left: 90%;
+			bottom: 11.7%;
+		}
+}
+
+.bouton {
+	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+	width: 218px;
+	height: 50px;
+	border-radius: 25px;
+	border-width: 0px;
+	border-left-style: solid;
+	margin-left: 82px;
+	margin-right: 75px;
+	color: $color_1;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.Footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	background: $background-color_footer;
+	width: 100%;
+	height: 114px;
+	gap: 50px;
+	padding-bottom: 30px;
+	margin-top: 1200px;
+	img {
+		width: 11px;
+		height: 13px;
+	}
+	h1 {
+		width: 137px;
+		height: 27px;
+		color: $color_3;
+		margin-right: 25px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.AideFooter {
+		display: flex;
+		flex-direction: row;
+		color: $color_3;
+		gap: 10px;
+		font-size: 16px;
+			p {
+			font-family: $font-family_2;
+			font-size: 16px;
+			font-style: normal;
+			}
+			.fa-handshake-angle{
+				color: $color_3;
+			}
+			.Directionrow {
+				margin-top: 15px;
+			}
+	}
+	.BoxFooter{
+		padding-left: 50px;
+		display: flex;
+		gap: 10px;
+	}
+	}
+
+@media screen and (max-width:1024px) {
+
+	.logodusite {
+		display: flex;
+		justify-content: center;
+			.logo {
+				display: flex;
+				width: 200px;
+				height: 34px;
+				margin-bottom: 32px;
+				margin-top: 30px;
+}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--Background, #F6F6F6);
+	border-radius: 25px;
+	width: 70%;
+	margin-left: 15%;
+	position: absolute;
+	top: 32%;
+	p {
+		border-radius: 15.043px;
+		background: $color_3;
+		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+		width: 90%;
+		height: 3%;
+		padding: 15px;
+		margin-left: 0px;
+		font-size: 13px;
+		z-index: 1;
+		&:hover {
+			transform: scaleX(0.93);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
+	}
+	h5 {
+		display: flex;
+		align-self: flex-start;
+		margin-left: 50px;
+		width: 275px;
+		height: 27px;
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+	h2 {
+		display: block;
+		margin-top: 51px;
+		margin-bottom: 0px;
+		width: 61%;
+		height: 41px;
+		font-size: 28px;
+		font-family: $font-family_1;
+	}
+	.fa-heart {
+		margin-left: 24px;
+			&:hover {
+				color: $color_2;
+			}
+	}
+	.ma-ligne {
+		height: 3px;
+		width: 40px;
+		background-color: $color_border;
+		display: block; 
+		align-self: flex-start;
+		margin-left: 50px;
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
+}
+
+.cardcontainer {
+	width: 100%;
+  	margin-left: 60px;
+	z-index: 99;
 		.cardanim3 {
 		display: flex;
 		flex-direction: column;
@@ -125,7 +322,7 @@ body {
 			color: $color_3;
 			z-index: -1;
 			bottom: 66.4%;
-  			left: 8%;
+  			left: 6.7%;
 		}
 }
 		.cardanim2 {
@@ -139,7 +336,7 @@ body {
 		justify-content: center;
 		border-top-right-radius: 15px;
 		border-bottom-right-radius: 15px;
-		left: 90%;
+		left: 88.7%;
 		bottom: 73.6%;
 		z-index: -1;
 }
@@ -154,7 +351,7 @@ body {
 			justify-content: center;
 			border-top-right-radius: 15px;
 			border-bottom-right-radius: 15px;
-			left: 90%;
+			left: 88.7%;
 			bottom: 80.7%;
 			z-index: -1;
 }
@@ -218,6 +415,8 @@ body {
 			}
 	}
 	}
+}
+
 
 @media screen and (max-width:768px) {
 	.logodusite{
