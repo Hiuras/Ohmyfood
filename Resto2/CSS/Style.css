@@ -39,18 +39,24 @@ body {
 }
 .card p {
   border-radius: 15.043px;
-  background: var(--White, #FFF);
+  background: #FFF;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   width: 90%;
   height: 3%;
   padding: 15px;
   margin-left: 10px;
   font-size: 13px;
+  z-index: 1;
+}
+.card p:hover {
+  transform: scaleX(0.93);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 .card h5 {
   display: flex;
   align-self: flex-start;
-  margin-left: 35px;
+  margin-left: 50px;
   width: 275px;
   height: 27px;
   margin-bottom: 0px;
@@ -60,12 +66,12 @@ body {
   display: block;
   margin-top: 51px;
   margin-bottom: 0px;
-  width: 37%;
+  width: 100%;
   height: 41px;
   font-size: 28px;
   font-family: "Shrikhand";
 }
-.card .like {
+.card .fa-heart {
   margin-left: 24px;
 }
 .card .ma-ligne {
@@ -74,11 +80,66 @@ body {
   background-color: #99E2D0;
   display: block;
   align-self: flex-start;
-  margin-left: 35px;
+  margin-left: 50px;
+}
+.card span {
+  display: flex;
+  position: absolute;
+  left: 90%;
+}
+
+.cardcontainer {
+  width: 100%;
+  margin-left: 60px;
+  z-index: 99;
+}
+.cardcontainer .animation {
+  background-color: #99E2D0;
+  color: #FFF;
+  width: 70px;
+  height: 59px;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: -1;
+  left: 90%;
+}
+.cardcontainer .cardanim3 {
+  bottom: 68.5%;
+}
+.cardcontainer .cardanim2 {
+  bottom: 75.2%;
+}
+.cardcontainer .cardanim {
+  bottom: 81.9%;
+}
+.cardcontainer .cardanim4 {
+  bottom: 61.8%;
+}
+.cardcontainer .cardanim5 {
+  bottom: 49.8%;
+}
+.cardcontainer .cardanim6 {
+  bottom: 43%;
+}
+.cardcontainer .cardanim7 {
+  bottom: 36.3%;
+}
+.cardcontainer .cardanim8 {
+  bottom: 24.3%;
+}
+.cardcontainer .cardanim9 {
+  bottom: 17.7%;
+}
+.cardcontainer .cardanim10 {
+  bottom: 11%;
 }
 
 .bouton {
-  background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -89,6 +150,10 @@ body {
   color: var(--White, #FFF);
   margin-bottom: 40px;
   margin-top: 40px;
+}
+.bouton:hover {
+  opacity: 70%;
+  transition-duration: 1s;
 }
 
 .Footer {
@@ -127,7 +192,6 @@ body {
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
-  padding-left: 50px;
 }
 .Footer .AideFooter .fa-handshake-angle {
   color: #FFF;
@@ -135,7 +199,198 @@ body {
 .Footer .AideFooter .Directionrow {
   margin-top: 15px;
 }
+.Footer .BoxFooter {
+  padding-left: 50px;
+  display: flex;
+  gap: 10px;
+}
 
+@media screen and (max-width: 1024px) {
+  .logodusite {
+    display: flex;
+    justify-content: center;
+  }
+  .logodusite .logo {
+    display: flex;
+    width: 200px;
+    height: 34px;
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--Background, #F6F6F6);
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 15%;
+    position: absolute;
+    top: 32%;
+  }
+  .card p {
+    border-radius: 15.043px;
+    background: #FFF;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 3%;
+    padding: 15px;
+    margin-left: 0px;
+    font-size: 13px;
+    z-index: 1;
+  }
+  .card p:active {
+    transform: scaleX(0.9);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  .card p:hover {
+    pointer-events: none;
+  }
+  .card h5 {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 50px;
+    width: 275px;
+    height: 27px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .card h2 {
+    display: block;
+    margin-top: 51px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 41px;
+    font-size: 28px;
+    font-family: "Shrikhand";
+  }
+  .card .fa-heart {
+    margin-left: 24px;
+  }
+  .card .fa-heart:active {
+    color: linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+  .card .ma-ligne {
+    height: 3px;
+    width: 40px;
+    background-color: #99E2D0;
+    display: block;
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  .card span {
+    display: flex;
+    position: absolute;
+    left: 90%;
+  }
+  .cardcontainer {
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 36px;
+    z-index: 99;
+  }
+  .cardcontainer .animation {
+    background-color: #99E2D0;
+    color: #FFF;
+    width: 70px;
+    height: 59px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: -1;
+    left: 84.9%;
+  }
+  .cardcontainer .cardanim3 {
+    bottom: 68.5%;
+  }
+  .cardcontainer .cardanim2 {
+    bottom: 75.2%;
+  }
+  .cardcontainer .cardanim {
+    bottom: 81.9%;
+  }
+  .cardcontainer .cardanim4 {
+    bottom: 61.8%;
+  }
+  .cardcontainer .cardanim5 {
+    bottom: 49.8%;
+  }
+  .cardcontainer .cardanim6 {
+    bottom: 43%;
+  }
+  .cardcontainer .cardanim7 {
+    bottom: 36.3%;
+  }
+  .cardcontainer .cardanim8 {
+    bottom: 24.3%;
+  }
+  .cardcontainer .cardanim9 {
+    bottom: 17.7%;
+  }
+  .cardcontainer .cardanim10 {
+    bottom: 11%;
+  }
+  .bouton {
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-left-style: solid;
+    margin-left: 82px;
+    margin-right: 75px;
+    color: var(--White, #FFF);
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .Footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    background: #353535;
+    width: 100%;
+    height: 114px;
+    gap: 50px;
+    padding-bottom: 30px;
+    margin-top: 1250px;
+  }
+  .Footer img {
+    width: 11px;
+    height: 13px;
+  }
+  .Footer h1 {
+    width: 137px;
+    height: 27px;
+    color: #FFF;
+    margin-right: 25px;
+    font-family: "Shrikhand";
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .Footer .AideFooter {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    gap: 10px;
+    font-size: 16px;
+  }
+  .Footer .AideFooter p {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+  }
+  .Footer .AideFooter .fa-handshake-angle {
+    color: #FFF;
+  }
+  .Footer .AideFooter .Directionrow {
+    margin-top: 15px;
+  }
+}
 @media screen and (max-width: 768px) {
   .logodusite {
     display: flex;
@@ -172,15 +427,19 @@ body {
     height: 1275px;
     margin-left: 0;
   }
-  .card h2 {
-    width: 341px;
+  .card .cardtitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-weight: 400;
     font-family: "Shrikhand";
     padding-left: 17px;
     padding-top: 31px;
   }
+  .card h2 {
+    margin-top: 0px;
+  }
   .card h5 {
-    padding-top: 40px;
     margin-left: 10px;
     width: 13%;
   }
@@ -203,6 +462,55 @@ body {
   }
   .card .like {
     margin-top: 16px;
+  }
+  .cardcontainer {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 36px;
+    z-index: 99;
+  }
+  .cardcontainer .animation {
+    background-color: #99E2D0;
+    color: #FFF;
+    width: 70px;
+    height: 59px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: -1;
+    left: 84.9%;
+  }
+  .cardcontainer .cardanim3 {
+    bottom: 66.4%;
+    width: 70px;
+    height: 59px;
+  }
+  .cardcontainer .cardanim2 {
+    bottom: 73.6%;
+  }
+  .cardcontainer .cardanim {
+    bottom: 80.7%;
+  }
+  .cardcontainer .cardanim4 {
+    bottom: 53.4%;
+  }
+  .cardcontainer .cardanim5 {
+    bottom: 46.4%;
+  }
+  .cardcontainer .cardanim6 {
+    bottom: 39%;
+  }
+  .cardcontainer .cardanim7 {
+    bottom: 26.3%;
+  }
+  .cardcontainer .cardanim8 {
+    bottom: 19.1%;
+  }
+  .cardcontainer .cardanim9 {
+    bottom: 11.7%;
   }
   .euro {
     justify-content: right;
@@ -244,7 +552,7 @@ body {
     align-items: baseline;
     gap: 0px;
     padding-bottom: 0px;
-    margin-top: 60px;
+    margin-top: 0px;
   }
   .Footer img {
     display: flex;
@@ -279,6 +587,12 @@ body {
     padding-left: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .Footer .BoxFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 10px;
   }
 }
 

@@ -5,19 +5,24 @@ $color_border: #99E2D0;
 $font-family_1:'Shrikhand';
 $font-family_2: 'Roboto';
 $background-color_footer: #353535;
+$anim-color: #99E2D0;
+$gradiant: linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%);
+$card-color: #F6F6F6;
+$animationbouton: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+$btn: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 
 body {
 	margin: 0px;
 }
-.logodusite {
-	display: flex;
-	justify-content: center;
-		.logo {
-			display: flex;
-			width: 200px;
-			height: 34px;
-			margin-bottom: 32px;
-			margin-top: 30px;
+	.logodusite {
+		display: flex;
+		justify-content: center;
+			.logo {
+				display: flex;
+				width: 200px;
+				height: 34px;
+				margin-bottom: 32px;
+				margin-top: 30px;
 }
 }
 .BackButton {
@@ -42,18 +47,24 @@ body {
 	top: 32%;
 	p {
 		border-radius: 15.043px;
-		background: var(--White, #FFF);
+		background: $color_3;
 		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 		width: 90%;
 		height: 3%;
 		padding: 15px;
 		margin-left: 10px;
 		font-size: 13px;
+		z-index: 1;
+		&:hover {
+			transform: scaleX(0.93);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
 	}
 	h5 {
 		display: flex;
 		align-self: flex-start;
-		margin-left: 35px;
+		margin-left: 50px;
 		width: 275px;
 		height: 27px;
 		margin-bottom: 0px;
@@ -63,13 +74,16 @@ body {
 		display: block;
 		margin-top: 51px;
 		margin-bottom: 0px;
-		width: 37%;
+		width: 100%;
 		height: 41px;
 		font-size: 28px;
 		font-family: $font-family_1;
 	}
-	.like {
+	.fa-heart {
 		margin-left: 24px;
+			&:active {
+				
+			}
 	}
 	.ma-ligne {
 		height: 3px;
@@ -77,9 +91,266 @@ body {
 		background-color: $color_border;
 		display: block; 
 		align-self: flex-start;
-		margin-left: 35px;
-	  }
+		margin-left: 50px;
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
 }
+
+.cardcontainer {
+	width: 100%;
+  	margin-left: 60px;
+	z-index: 99;
+		.animation {
+			background-color: $anim-color;
+			color: $color_3;
+			width: 70px;
+			height: 59px;
+			position: absolute;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			z-index: -1;
+			left: 90%;
+		}
+		.cardanim3 {
+			bottom: 68.5%;
+}
+		.cardanim2 {
+			bottom: 75.2%;
+}
+		.cardanim {
+			bottom: 81.9%;
+}
+		.cardanim4{
+			bottom: 61.8%;
+		}
+		.cardanim5 {
+			bottom: 49.8%;
+		}
+		.cardanim6{
+			bottom: 43%;
+		}
+		.cardanim7 {
+			bottom: 36.3%;
+		}
+		.cardanim8 {
+			bottom: 24.3%;
+		}
+		.cardanim9 {
+			bottom: 17.7%;
+		}
+		.cardanim10 {
+			bottom: 11%;
+		}
+}
+
+.bouton {
+	background: $btn;
+	width: 218px;
+	height: 50px;
+	border-radius: 25px;
+	border-width: 0px;
+	border-left-style: solid;
+	margin-left: 82px;
+	margin-right: 75px;
+	color: $color_1;
+	margin-bottom: 40px;
+	margin-top: 40px;
+		&:hover {
+			opacity: 70%;
+			transition-duration: 1s;
+		}
+}
+
+.Footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	background: $background-color_footer;
+	width: 100%;
+	height: 114px;
+	gap: 50px;
+	padding-bottom: 30px;
+	margin-top: 1250px;
+	img {
+		width: 11px;
+		height: 13px;
+	}
+	h1 {
+		width: 137px;
+		height: 27px;
+		color: $color_3;
+		margin-right: 25px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.AideFooter {
+		display: flex;
+		flex-direction: row;
+		color: $color_3;
+		gap: 10px;
+		font-size: 16px;
+			p {
+			font-family: $font-family_2;
+			font-size: 16px;
+			font-style: normal;
+			}
+			.fa-handshake-angle{
+				color: $color_3;
+			}
+			.Directionrow {
+				margin-top: 15px;
+			}
+	}
+	.BoxFooter{
+		padding-left: 50px;
+		display: flex;
+		gap: 10px;
+	}
+	}
+
+@media screen and (max-width:1024px) {
+
+	.logodusite {
+		display: flex;
+		justify-content: center;
+			.logo {
+				display: flex;
+				width: 200px;
+				height: 34px;
+				margin-bottom: 32px;
+				margin-top: 30px;
+}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--Background, #F6F6F6);
+	border-radius: 25px;
+	width: 70%;
+	margin-left: 15%;
+	position: absolute;
+	top: 32%;
+	p {
+		border-radius: 15.043px;
+		background: $color_3;
+		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+		width: 90%;
+		height: 3%;
+		padding: 15px;
+		margin-left: 0px;
+		font-size: 13px;
+		z-index: 1;
+		&:active {
+			transform: scaleX(0.90);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
+		&:hover {
+			pointer-events: none;
+		}
+	}
+	h5 {
+		display: flex;
+		align-self: flex-start;
+		margin-left: 50px;
+		width: 275px;
+		height: 27px;
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+	h2 {
+		display: block;
+		margin-top: 51px;
+		margin-bottom: 0px;
+		width: 100%;
+		height: 41px;
+		font-size: 28px;
+		font-family: $font-family_1;
+	}
+	.fa-heart {
+		margin-left: 24px;
+		&:active {
+				color: $gradiant;
+			}
+	}
+	.ma-ligne {
+		height: 3px;
+		width: 40px;
+		background-color: $color_border;
+		display: block; 
+		align-self: flex-start;
+		margin-left: 50px;
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
+	}
+
+
+	.cardcontainer {
+		width: 100%;
+		  margin-left: 60px;
+		  margin-right: 36px;
+		z-index: 99;
+			.animation {
+				background-color: $anim-color;
+				color: $color_3;
+				width: 70px;
+				height: 59px;
+				position: absolute;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+				left: 84.9%;
+			}
+			.cardanim3 {
+				bottom: 68.5%;
+	}
+			.cardanim2 {
+				bottom: 75.2%;
+	}
+			.cardanim {
+				bottom: 81.9%;
+	}
+			.cardanim4{
+				bottom: 61.8%;
+			}
+			.cardanim5 {
+				bottom: 49.8%;
+			}
+			.cardanim6{
+				bottom: 43%;
+			}
+			.cardanim7 {
+				bottom: 36.3%;
+			}
+			.cardanim8 {
+				bottom: 24.3%;
+			}
+			.cardanim9 {
+				bottom: 17.7%;
+			}
+			.cardanim10 {
+				bottom: 11%;
+			}
+		}
+
 .bouton {
 	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
 	width: 218px;
@@ -128,7 +399,6 @@ body {
 			font-family: $font-family_2;
 			font-size: 16px;
 			font-style: normal;
-			padding-left: 50px;
 			}
 			.fa-handshake-angle{
 				color: $color_3;
@@ -138,6 +408,8 @@ body {
 			}
 	}
 	}
+}
+
 
 @media screen and (max-width:768px) {
 	.logodusite{
@@ -174,15 +446,19 @@ body {
 		width: 100%;
 		height: 1275px;
 		margin-left: 0;
-		h2 {
-			width: 341px;
+		.cardtitle {
+			display: flex;
+			justify-content: center;
+			width: 100%;
 			font-weight: 400;
 			font-family: $font-family_1;
 			padding-left: 17px;
 			padding-top: 31px;
 		}
+		h2 {
+			margin-top: 0px;
+		}
 		h5 {
-			padding-top: 40px;
 			margin-left: 10px;
 			width: 13%;
 		}
@@ -207,6 +483,56 @@ body {
 			margin-top: 16px;
 		}
 	}
+
+	.cardcontainer {
+		width: 100%;
+		  margin-left: 0px;
+		  margin-right: 36px;
+		z-index: 99;
+			.animation {
+				background-color: $anim-color;
+				color: $color_3;
+				width: 70px;
+				height: 59px;
+				position: absolute;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+				left: 84.9%;
+			}
+			.cardanim3 {
+				bottom: 66.4%;
+				width: 70px;
+				height: 59px;
+	}
+			.cardanim2 {
+				bottom: 73.6%;
+	}
+			.cardanim {
+				bottom: 80.7%;
+	}
+			.cardanim4{
+				bottom: 53.4%;
+			}
+			.cardanim5 {
+				bottom: 46.4%;
+			}
+			.cardanim6{
+				bottom: 39%;
+			}
+			.cardanim7 {
+				bottom: 26.3%;
+			}
+			.cardanim8 {
+				bottom: 19.1%;
+			}
+			.cardanim9 {
+				bottom: 11.7%;
+			}
+	}
 	.euro {
 		justify-content: right;
 		display: flex;
@@ -222,6 +548,7 @@ body {
 			}
 		}
 	}
+	
 	.btn {
 		display: flex;
 		justify-content: center;
@@ -249,7 +576,7 @@ body {
 		align-items: baseline;
 		gap: 0px;
 		padding-bottom: 0px;
-		margin-top: 60px;
+		margin-top: 0px;
 		img {
 			display: flex;
 			flex-direction: row;
@@ -283,6 +610,12 @@ body {
 				margin-top: 0px;
   				margin-bottom: 0px;
 			}
+		}
+		.BoxFooter{
+			display: flex;
+			flex-direction: column;
+			padding-left: 30px;
+			gap: 10px;
 		}
 }
 }
