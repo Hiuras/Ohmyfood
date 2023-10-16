@@ -246,10 +246,13 @@ body {
     font-size: 13px;
     z-index: 1;
   }
-  .card p:hover {
+  .card p:active {
     transform: scaleX(0.9);
     transform-origin: left;
     transition: transform 0.3s ease;
+  }
+  .card p:hover {
+    pointer-events: none;
   }
   .card h5 {
     display: flex;
@@ -430,15 +433,19 @@ body {
     height: 1275px;
     margin-left: 0;
   }
-  .card h2 {
-    width: 341px;
+  .card .cardtitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-weight: 400;
     font-family: "Shrikhand";
     padding-left: 17px;
     padding-top: 31px;
   }
+  .card h2 {
+    margin-top: 0px;
+  }
   .card h5 {
-    padding-top: 40px;
     margin-left: 10px;
     width: 13%;
   }
@@ -461,6 +468,55 @@ body {
   }
   .card .like {
     margin-top: 16px;
+  }
+  .cardcontainer {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 36px;
+    z-index: 99;
+  }
+  .cardcontainer .animation {
+    background-color: #99E2D0;
+    color: #FFF;
+    width: 70px;
+    height: 59px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: -1;
+    left: 84.9%;
+  }
+  .cardcontainer .cardanim3 {
+    bottom: 66.4%;
+    width: 70px;
+    height: 59px;
+  }
+  .cardcontainer .cardanim2 {
+    bottom: 73.6%;
+  }
+  .cardcontainer .cardanim {
+    bottom: 80.7%;
+  }
+  .cardcontainer .cardanim4 {
+    bottom: 53.4%;
+  }
+  .cardcontainer .cardanim5 {
+    bottom: 46.4%;
+  }
+  .cardcontainer .cardanim6 {
+    bottom: 39%;
+  }
+  .cardcontainer .cardanim7 {
+    bottom: 26.3%;
+  }
+  .cardcontainer .cardanim8 {
+    bottom: 19.1%;
+  }
+  .cardcontainer .cardanim9 {
+    bottom: 11.7%;
   }
   .euro {
     justify-content: right;
@@ -537,6 +593,12 @@ body {
     padding-left: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .Footer .BoxFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 10px;
   }
 }
 
