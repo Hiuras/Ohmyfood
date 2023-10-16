@@ -77,8 +77,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 36px;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 43px;
+  margin-right: 43px;
   border-radius: 20px;
 }
 .BoxResto h3 {
@@ -228,6 +228,12 @@ body {
   padding-top: 14px;
 }
 
+@media screen and (max-width: 1024px) {
+  .BoxResto {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .logodusite {
     display: flex;
@@ -292,6 +298,17 @@ body {
     font-size: 18px;
     display: flex;
     justify-self: center;
+  }
+  .FlexBoxResto {
+    width: 90%;
+    height: 72px;
+    border-radius: 20px;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
   }
   .BoxResto {
     display: flex;
