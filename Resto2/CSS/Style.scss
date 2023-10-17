@@ -488,7 +488,8 @@ body {
 		width: 100%;
 		  margin-left: 0px;
 		  margin-right: 36px;
-		z-index: 99;
+		z-index: 1;
+		position: relative;
 			.animation {
 				background-color: $anim-color;
 				color: $color_3;
@@ -504,33 +505,34 @@ body {
 				left: 84.9%;
 			}
 			.cardanim3 {
-				bottom: 66.4%;
-				width: 70px;
-				height: 59px;
+				bottom: 4.4%;
 	}
 			.cardanim2 {
-				bottom: 73.6%;
+				bottom: 4.6%;
 	}
 			.cardanim {
-				bottom: 80.7%;
+				bottom: 4.7%;
 	}
 			.cardanim4{
-				bottom: 53.4%;
+				bottom: 3.4%;
 			}
 			.cardanim5 {
-				bottom: 46.4%;
+				bottom: 3.4%;
 			}
 			.cardanim6{
-				bottom: 39%;
+				bottom: 0%;
 			}
 			.cardanim7 {
-				bottom: 26.3%;
+				bottom: 4.3%;
 			}
 			.cardanim8 {
-				bottom: 19.1%;
+				bottom: 4.1%;
 			}
 			.cardanim9 {
-				bottom: 11.7%;
+				bottom: 4.7%;
+			}
+			.cardanim10 {
+				bottom: 4%;
 			}
 	}
 	.euro {
