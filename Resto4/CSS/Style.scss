@@ -5,11 +5,16 @@ $color_border: #99E2D0;
 $font-family_1:'Shrikhand';
 $font-family_2: 'Roboto';
 $background-color_footer: #353535;
+$anim-color: #99E2D0;
+$gradiant: linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%);
+$card-color: #F6F6F6;
+$animationbouton: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+$btn: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+$heart: linear-gradient(to bottom, rgba(147, 86, 220, 1) 100%,rgba(255, 121, 218, 1));
 
 body {
 	margin: 0px;
 }
-
 	.logodusite {
 		display: flex;
 		justify-content: center;
@@ -43,18 +48,24 @@ body {
 	top: 32%;
 	p {
 		border-radius: 15.043px;
-		background: var(--White, #FFF);
+		background: $color_3;
 		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 		width: 90%;
 		height: 3%;
 		padding: 15px;
 		margin-left: 10px;
 		font-size: 13px;
+		z-index: 1;
+		&:hover {
+			transform: scaleX(0.93);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
 	}
 	h5 {
 		display: flex;
 		align-self: flex-start;
-		margin-left: 35px;
+		margin-left: 50px;
 		width: 275px;
 		height: 27px;
 		margin-bottom: 0px;
@@ -64,13 +75,29 @@ body {
 		display: block;
 		margin-top: 51px;
 		margin-bottom: 0px;
-		width: 37%;
+		width: 100%;
 		height: 41px;
 		font-size: 28px;
 		font-family: $font-family_1;
 	}
-	.like {
+	.fa-heart {
 		margin-left: 24px;
+		&:active {
+			background-color: transparent;
+			clip-path: path("M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181");
+			animation: fillHeart forwards;
+		}
+		@keyframes fillHeart {
+			0% {
+				background-color: transparent;
+			}
+			100% {
+				clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+				color: $color_2;
+				background-color: $heart;
+				transform: scale(1);
+			}
+		}
 	}
 	.ma-ligne {
 		height: 3px;
@@ -78,9 +105,260 @@ body {
 		background-color: $color_border;
 		display: block; 
 		align-self: flex-start;
-		margin-left: 35px;
-	  }
+		margin-left: 50px;
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
 }
+
+.cardcontainer {
+	width: 100%;
+  	margin-left: 60px;
+	z-index: 99;
+		.animation {
+			background-color: $anim-color;
+			color: $color_3;
+			width: 70px;
+			height: 59px;
+			position: absolute;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			z-index: -1;
+			left: 90%;
+		}
+		.cardanim3 {
+			bottom: 66.5%;
+}
+		.cardanim2 {
+			bottom: 73.4%;
+}
+		.cardanim {
+			bottom: 80.8%;
+}
+		.cardanim4{
+			bottom: 53.3%;
+		}
+		.cardanim5 {
+			bottom: 46.3%;
+		}
+		.cardanim6{
+			bottom: 39%;
+		}
+		.cardanim7 {
+			bottom: 26.3%;
+		}
+		.cardanim8 {
+			bottom: 19.1%;
+		}
+		.cardanim9 {
+			bottom: 11.7%;
+		}
+}
+
+.bouton {
+	background: $btn;
+	width: 218px;
+	height: 50px;
+	border-radius: 25px;
+	border-width: 0px;
+	border-left-style: solid;
+	margin-left: 82px;
+	margin-right: 75px;
+	color: $color_1;
+	margin-bottom: 40px;
+	margin-top: 40px;
+		&:hover {
+			opacity: 70%;
+			transition-duration: 1s;
+		}
+}
+
+.Footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	background: $background-color_footer;
+	width: 100%;
+	height: 114px;
+	gap: 50px;
+	padding-bottom: 30px;
+	margin-top: 1250px;
+	img {
+		width: 11px;
+		height: 13px;
+	}
+	h1 {
+		width: 137px;
+		height: 27px;
+		color: $color_3;
+		margin-right: 25px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.AideFooter {
+		display: flex;
+		flex-direction: row;
+		color: $color_3;
+		gap: 10px;
+		font-size: 16px;
+			p {
+			font-family: $font-family_2;
+			font-size: 16px;
+			font-style: normal;
+			}
+			.fa-handshake-angle{
+				color: $color_3;
+			}
+			.Directionrow {
+				margin-top: 15px;
+			}
+	}
+	.BoxFooter{
+		padding-left: 50px;
+		display: flex;
+		gap: 10px;
+	}
+	}
+
+@media screen and (max-width:1024px) {
+
+	.logodusite {
+		display: flex;
+		justify-content: center;
+			.logo {
+				display: flex;
+				width: 200px;
+				height: 34px;
+				margin-bottom: 32px;
+				margin-top: 30px;
+}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--Background, #F6F6F6);
+	border-radius: 25px;
+	width: 70%;
+	margin-left: 15%;
+	position: absolute;
+	top: 32%;
+	p {
+		border-radius: 15.043px;
+		background: $color_3;
+		box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+		width: 90%;
+		height: 3%;
+		padding: 15px;
+		margin-left: 0px;
+		font-size: 13px;
+		z-index: 1;
+		&:active {
+			transform: scaleX(0.90);
+			transform-origin: left;
+			transition: transform 0.3s ease;
+		}
+		&:hover {
+			pointer-events: none;
+		}
+	}
+	h5 {
+		display: flex;
+		align-self: flex-start;
+		margin-left: 50px;
+		width: 275px;
+		height: 27px;
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+	h2 {
+		display: block;
+		margin-top: 51px;
+		margin-bottom: 0px;
+		width: 100%;
+		height: 41px;
+		font-size: 28px;
+		font-family: $font-family_1;
+	}
+	.fa-heart {
+		margin-left: 24px;
+		&:active {
+				color: $gradiant;
+			}
+	}
+	.ma-ligne {
+		height: 3px;
+		width: 40px;
+		background-color: $color_border;
+		display: block; 
+		align-self: flex-start;
+		margin-left: 50px;
+	}
+	span {
+		display: flex;
+		position: absolute;
+		left: 90%;
+	}
+	}
+
+
+	.cardcontainer {
+		width: 100%;
+		  margin-left: 60px;
+		  margin-right: 36px;
+		z-index: 99;
+			.animation {
+				background-color: $anim-color;
+				color: $color_3;
+				width: 70px;
+				height: 59px;
+				position: absolute;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+				left: 84.9%;
+			}
+			.cardanim3 {
+				bottom: 66.5%;
+	}
+			.cardanim2 {
+				bottom: 73.4%;
+	}
+			.cardanim {
+				bottom: 80.8%;
+	}
+			.cardanim4{
+				bottom: 53.3%;
+			}
+			.cardanim5 {
+				bottom: 46.3%;
+			}
+			.cardanim6{
+				bottom: 39%;
+			}
+			.cardanim7 {
+				bottom: 26.3%;
+			}
+			.cardanim8 {
+				bottom: 19.1%;
+			}
+			.cardanim9 {
+				bottom: 11.7%;
+			}
+		}
+
 .bouton {
 	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
 	width: 218px;
@@ -124,12 +402,11 @@ body {
 		flex-direction: row;
 		color: $color_3;
 		gap: 10px;
-		font-size: 14px;
+		font-size: 16px;
 			p {
 			font-family: $font-family_2;
 			font-size: 16px;
 			font-style: normal;
-			padding-left: 50px;
 			}
 			.fa-handshake-angle{
 				color: $color_3;
@@ -139,6 +416,8 @@ body {
 			}
 	}
 	}
+}
+
 
 @media screen and (max-width:768px) {
 	.logodusite{
@@ -175,15 +454,19 @@ body {
 		width: 100%;
 		height: 1275px;
 		margin-left: 0;
-		h2 {
-			width: 341px;
+		.cardtitle {
+			width: 100%;
 			font-weight: 400;
 			font-family: $font-family_1;
 			padding-left: 17px;
 			padding-top: 31px;
 		}
+		h2 {
+			margin-top: 0px;
+			display: flex;
+			justify-content: center;
+		}
 		h5 {
-			padding-top: 40px;
 			margin-left: 10px;
 			width: 13%;
 		}
@@ -208,6 +491,58 @@ body {
 			margin-top: 16px;
 		}
 	}
+
+	.cardcontainer {
+		width: 100%;
+		  margin-left: 0px;
+		  margin-right: 36px;
+		z-index: 1;
+		position: relative;
+			.animation {
+				background-color: $anim-color;
+				color: $color_3;
+				width: 70px;
+				height: 59px;
+				position: absolute;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+				left: 84.9%;
+			}
+			.cardanim3 {
+				bottom: 4.4%;
+	}
+			.cardanim2 {
+				bottom: 4.6%;
+	}
+			.cardanim {
+				bottom: 4.7%;
+	}
+			.cardanim4{
+				bottom: 3.4%;
+			}
+			.cardanim5 {
+				bottom: 3.4%;
+			}
+			.cardanim6{
+				bottom: 0%;
+			}
+			.cardanim7 {
+				bottom: 4.3%;
+			}
+			.cardanim8 {
+				bottom: 4.1%;
+			}
+			.cardanim9 {
+				bottom: 4.7%;
+			}
+			.cardanim10 {
+				bottom: 4%;
+			}
+	}
 	.euro {
 		justify-content: right;
 		display: flex;
@@ -223,6 +558,7 @@ body {
 			}
 		}
 	}
+	
 	.btn {
 		display: flex;
 		justify-content: center;
@@ -284,6 +620,12 @@ body {
 				margin-top: 0px;
   				margin-bottom: 0px;
 			}
+		}
+		.BoxFooter{
+			display: flex;
+			flex-direction: column;
+			padding-left: 30px;
+			gap: 10px;
 		}
 }
 }

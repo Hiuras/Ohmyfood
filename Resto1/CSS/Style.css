@@ -267,7 +267,7 @@ body {
     display: block;
     margin-top: 51px;
     margin-bottom: 0px;
-    width: 61%;
+    width: 100%;
     height: 41px;
     font-size: 28px;
     font-family: "Shrikhand";
@@ -473,7 +473,8 @@ body {
     width: 100%;
     margin-left: 0px;
     margin-right: 36px;
-    z-index: 99;
+    z-index: 1;
+    position: relative;
   }
   .cardcontainer .animation {
     background-color: #99E2D0;
@@ -490,33 +491,34 @@ body {
     left: 84.9%;
   }
   .cardcontainer .cardanim3 {
-    bottom: 66.4%;
-    width: 70px;
-    height: 59px;
+    bottom: 4.4%;
   }
   .cardcontainer .cardanim2 {
-    bottom: 73.6%;
+    bottom: 4.6%;
   }
   .cardcontainer .cardanim {
-    bottom: 80.7%;
+    bottom: 4.7%;
   }
   .cardcontainer .cardanim4 {
-    bottom: 53.4%;
+    bottom: 3.4%;
   }
   .cardcontainer .cardanim5 {
-    bottom: 46.4%;
+    bottom: 3.4%;
   }
   .cardcontainer .cardanim6 {
-    bottom: 39%;
+    bottom: 0%;
   }
   .cardcontainer .cardanim7 {
-    bottom: 26.3%;
+    bottom: 4.3%;
   }
   .cardcontainer .cardanim8 {
-    bottom: 19.1%;
+    bottom: 4.1%;
   }
   .cardcontainer .cardanim9 {
-    bottom: 11.7%;
+    bottom: 4.7%;
+  }
+  .cardcontainer .cardanim10 {
+    bottom: 4%;
   }
   .euro {
     justify-content: right;
