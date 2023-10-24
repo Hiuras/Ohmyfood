@@ -26,7 +26,11 @@ body {
   height: 400px;
 }
 
-.card {
+.cardposition {
+  display: flex;
+  justify-content: center;
+}
+.cardposition .card {
   background-color: rgb(246, 246, 246);
   width: 1055px;
   height: 1221px;
@@ -36,37 +40,48 @@ body {
   border-radius: 25px 25px 0 0;
   position: absolute;
   top: 30%;
-  margin: 0 0 0 25%;
 }
-
-.title {
+.cardposition .title {
   display: flex;
 }
-
-.Box_menu1 {
+.cardposition .Box_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
-.Box_menu1 .menu {
+.cardposition .Box_menu .ma-ligne {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  display: block;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+.cardposition .Box_menu h5 {
+  display: flex;
+  margin-bottom: 0;
+  padding-right: 75%;
+}
+.cardposition .Box_menu .menu {
   background-color: #FFF;
   width: 634px;
   height: 72px;
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
-  cursor: po;
+  cursor: pointer;
 }
-.Box_menu1 .menu .description {
+.cardposition .Box_menu .menu .description {
   margin-top: -13px;
   margin-left: 20px;
   width: 572px;
   height: 42px;
 }
-.Box_menu1 .menu .menu_price {
+.cardposition .Box_menu .menu .menu_price {
   display: flex;
   padding-left: 94%;
 }
-.Box_menu1 .menu .menu_check {
+.cardposition .Box_menu .menu .menu_check {
   display: flex;
   width: 59px;
   height: 73px;
@@ -79,7 +94,7 @@ body {
   border-radius: 0px 0px 15px 0px;
   position: relative;
 }
-.Box_menu1 .menu .menu_check::after {
+.cardposition .Box_menu .menu .menu_check::after {
   content: "\f00c";
   font-family: "FontAwesome";
   padding: 0.3125rem;
@@ -89,16 +104,13 @@ body {
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
 }
-.Box_menu1 .menu:hover .menu_check {
+.cardposition .Box_menu .menu:hover .menu_check {
   margin-right: 0;
   transition-duration: 1s;
 }
-.Box_menu1 .menu:hover .menu_price {
+.cardposition .Box_menu .menu:hover .menu_price {
   padding-left: 85%;
   transition-duration: 1s;
-}
-.Box_menu1 .menu:active .menu_check {
-  animation-play-state: paused;
 }
 
 .bouton {
@@ -130,6 +142,17 @@ body {
     height: 34px;
     margin-bottom: 32px;
     margin-top: 30px;
+  }
+  .cardposition .card {
+    width: 100%;
+    margin: 0px 0 0 0%;
+  }
+  .cardposition .card h2 {
+    display: flex;
+    gap: 10px;
+  }
+  .cardposition .card .Box_menu .menu {
+    width: 481px;
   }
   .bouton {
     background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
@@ -184,6 +207,17 @@ body {
   }
   .like a:active {
     color: red;
+  }
+  .cardposition .card {
+    width: 100%;
+    margin: 0px 0 0 0%;
+  }
+  .cardposition .card h2 {
+    display: flex;
+    gap: 10px;
+  }
+  .cardposition .card .Box_menu .menu {
+    width: 303px;
   }
   .btn {
     display: flex;
