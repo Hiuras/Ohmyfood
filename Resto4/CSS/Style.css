@@ -323,6 +323,57 @@ body {
     margin-top: 40px;
     padding: 0;
   }
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--Grey, #353535);
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+    gap: 0px;
+    padding-bottom: 0px;
+    margin-top: 1217px;
+  }
+  .Footer img {
+    display: flex;
+    flex-direction: row;
+    width: 11px;
+    height: 13px;
+  }
+  .Footer h1 {
+    padding-top: 22px;
+    padding-left: 25px;
+    margin-bottom: 16px;
+    color: #FFF;
+  }
+  .Footer span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 25px;
+  }
+  .Footer .Directionrow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .Footer .AideFooter {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 22px;
+  }
+  .Footer .AideFooter p {
+    color: #FFF;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .Footer .AideFooter .BoxFooter {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 30px;
+  }
 }
 
 /*# sourceMappingURL=Style.css.map */
