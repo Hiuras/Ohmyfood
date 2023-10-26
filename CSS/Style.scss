@@ -125,6 +125,11 @@ body.loaded .loader-container {
 	align-items: center;
 	margin-bottom: 30px;
 	color:$color_3;
+	&:hover {
+		opacity: 70%;
+		transition-duration: 1s;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+	}
 }
 
 .BoxRestoTitle {
@@ -186,7 +191,9 @@ body.loaded .loader-container {
 	align-items: center;
 	margin: 30px;
 		h3 {
-			display: flex;
+			width: 100%;
+  			height: 14.3px;
+			margin-top: 0;
 		}
 }
 
@@ -225,11 +232,29 @@ body.loaded .loader-container {
 		padding-left: 18px;
 	}
 	.fa-heart {
-		margin-left: 66%;
-			&:hover {
-				transform: scale(1.5);
-				color: red;
-			}
+		font-size: 180%;
+	}
+	.far {
+		display: flex;
+  	justify-content: flex-end;
+  	position: relative;
+  	top: -53px;
+  	margin-bottom: -56px;
+  	margin-right: 14px;
+	}
+	.fas{
+		background-clip: text;
+		color: transparent;
+		background-image: linear-gradient(red, blue);
+		opacity: 0;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		bottom: 26px;
+  		right: 14px;
+	}
+	&:hover .fas{
+		opacity: 1;
 	}
 }
 

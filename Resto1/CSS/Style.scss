@@ -42,7 +42,7 @@ body {
 .card {
 	background-color: $color_1;
 	width: 1055px;
-	height: 1221px;
+	height: 1123px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,7 +52,34 @@ body {
   }
   .title {
 	display: flex;
+	margin-bottom: -40px;
+	.fa-heart {
+	  margin-left: 90%;
+	  font-size: 100%;
+	}
+  
+	.far {
+	  position: relative;
+	  top: -24px;
+	}
+  
+	.fas {
+	  background-clip: text;
+	  color: transparent;
+	  background-image: linear-gradient(red, blue);
+	  opacity: 0;
+	  position: relative;
+	  top: -53px;
+	  bottom: 0;
+	}
+  
+	&:hover {
+	  .fas {
+		opacity: 1;
+	  }
+	}
   }
+  
   
   .Box_menu {
 	display: flex;
@@ -127,10 +154,16 @@ body {
 	&:hover .menu_check {
 		margin-right: 0;
 		transition-duration: 1s;
+		animation: rotate 1s;
 	}	
 	&:hover .menu_price {
 		padding-left: 90%;
 		transition-duration: 1s;
+	}
+	.menu_check::before:hover {
+		&:hover {
+		animation: rotate 1s;
+	}
 	}
   }
   @keyframes appear {
@@ -139,6 +172,14 @@ body {
 	}
 	100% {
 		opacity: 1;
+	}
+  }
+  @keyframes rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
   }
 }
@@ -175,7 +216,7 @@ body {
 	height: 114px;
 	gap: 50px;
 	padding-bottom: 30px;
-	margin-top: 996px;
+	margin-top: 898px;
 	img {
 		width: 11px;
 		height: 13px;
@@ -238,6 +279,38 @@ body {
 		display: flex;
 		gap: 10px;
 	  }
+	  .title {
+		display: flex;
+		margin-bottom: -40px;
+		.fa-heart {
+		  margin-left: 90%;
+		  font-size: 100%;
+		}
+	  
+		.far {
+		margin-left: 0;
+		position: relative;
+		top: 0;
+		}
+	  
+		.fas {
+		  background-clip: text;
+		  color: transparent;
+		  background-image: linear-gradient(red, blue);
+		  opacity: 0;
+		  position: relative;
+  			top: 0px;
+  			left: -34px;
+		  bottom: 0;
+		  margin-left: 0;
+		}
+	  
+		&:hover {
+		  .fas {
+			opacity: 1;
+		  }
+		}
+	  }
   
 	  .Box_menu {
 		.menu {
@@ -271,6 +344,54 @@ body {
 	margin-top: 40px;
 }
 
+.Footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+	background: $background-color_footer;
+	width: 100%;
+	height: 114px;
+	gap: 50px;
+	padding-bottom: 30px;
+	margin-top: 898px;
+	img {
+		width: 11px;
+		height: 13px;
+	}
+	h1 {
+		width: 137px;
+		height: 27px;
+		color: $color_3;
+		margin-right: 25px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	.AideFooter {
+		display: flex;
+		flex-direction: row;
+		color: $color_3;
+		gap: 10px;
+		font-size: 16px;
+			p {
+			font-family: $font-family_2;
+			font-size: 16px;
+			font-style: normal;
+			}
+			.fa-handshake-angle{
+				color: $color_3;
+			}
+			.Directionrow {
+				margin-top: 15px;
+			}
+	}
+	.BoxFooter{
+		padding-left: 50px;
+		display: flex;
+		gap: 10px;
+	}
+	}
 
 }
 
@@ -323,6 +444,7 @@ body {
 		.card {
 		  width: 90%;
 		  margin: 0;
+		  height: 1111px;
 		  
 		  h2 {
 			display: flex;
@@ -367,5 +489,46 @@ body {
 			padding: 0;
 	}
 	}
-	
-}
+
+	.Footer {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		background: $background-color_footer;
+		width: 100%;
+		height: 114px;
+		gap: 50px;
+		padding-bottom: 30px;
+		margin-top: 1107px;
+		img {
+			width: 11px;
+			height: 13px;
+		}
+		h1 {
+			width: 137px;
+			height: 27px;
+			color: $color_3;
+			margin-right: 25px;
+			font-family: $font-family_1;
+			font-style: normal;
+			font-size: 18px;
+			font-weight: 400;
+		}
+				p {
+				font-family: $font-family_2;
+				font-size: 16px;
+				font-style: normal;
+				}
+				.fa-handshake-angle{
+					color: $color_3;
+				}
+				.Directionrow {
+					margin-top: 15px;
+				}
+		}
+		.BoxFooter{
+			padding-left: 50px;
+			display: flex;
+			gap: 10px;
+		}
+		}
