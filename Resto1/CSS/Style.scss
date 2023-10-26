@@ -69,6 +69,14 @@ body {
 		align-self: flex-start;
 		margin-left: 50px;
 	}
+	p{
+		font-size: 15px;
+		margin-top: 0;
+	}
+	h4 {
+		font-size: 18px;
+		margin-bottom: 5.94px;
+	}
 	  h5 {
 		display: flex;
 		margin-bottom: 0;
@@ -84,7 +92,7 @@ body {
 	  cursor: pointer;
 	  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 		.description {
-			margin-top: -13px;
+			margin-top: -8px;
   			margin-left: 20px;
 			width: 572px;
 			height: 42px;
@@ -92,7 +100,9 @@ body {
 	.menu_price {
 		display: flex;
 		padding-left: 95%;
-		transition: padding-left 1s
+		transition: padding-left 1s;
+		position:relative;
+		top: -6px;
 	}
 	.menu_check {
 		display: flex;
@@ -100,7 +110,7 @@ body {
 		height: 73px;
 		margin-left: auto;
 		margin-right: -65px;
-		margin-top: -68px;
+		margin-top: -76px;
 		background-color: $anim-color;
 		justify-content: center;
 		align-items: center;
@@ -232,7 +242,9 @@ body {
 	  .Box_menu {
 		.menu {
 		  width: 100%;
-  
+			.menu_check {
+				margin-top: -77px;
+			}
 		  &:hover {
 			.menu_price {
 			  padding-left: 88%;
@@ -308,26 +320,33 @@ body {
 	}
 
 	.cardposition {
-	.card {
-		width: 90%;
-		margin: 0px 0 0 0%;
-		h2 {
+		.card {
+		  width: 90%;
+		  margin: 0;
+		  
+		  h2 {
 			display: flex;
 			gap: 10px;
+		  }
+		  
+		  .Box_menu {
+			.menu {
+			  width: 100%;
+			  
+			  .menu_check {
+				margin-top: -60px;
+			  }
+			  
+			  &:hover {
+				.menu_price {
+				  padding-left: 85%;
+				}
+			  }
+			}
+		  }
 		}
-	.Box_menu{
-	.menu {
-		width: 100%;
-		&:hover .menu_price {
-			padding-left: 85%;
-		}
-	}
-	.menu_check {
-		margin-top: -52px;
-	}
-	}
-}
-}
+	  }
+	  
 
 	
 	.btn {
