@@ -173,24 +173,15 @@ body {
       &:hover .menu_check {
         margin-right: 0;
         transition-duration: 1s;
-        animation: rotate 1s;
       }
       &:hover .menu_price {
         padding-left: 90%;
         transition-duration: 1s;
       }
-      .menu_check::before:hover {
-        &:hover {
-          animation: rotate 1s;
+      &:hover {
+        i{
+          animation: rotate 1s ease;
         }
-      }
-    }
-    @keyframes appear {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
       }
     }
     @keyframes rotate {
@@ -199,6 +190,14 @@ body {
       }
       100% {
         transform: rotate(360deg);
+      }
+    }
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
       }
     }
   }
