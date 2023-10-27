@@ -26,33 +26,29 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+	animation: hiden 2s forwards;
 }
 
 .loader {
     width: 100px;
     height: 100px;
-    border: 8px solid #f3f3f3;
     border-top: 8px solid #3498db;
     border-radius: 50%;
-    animation: spin 2s linear 1; /* L'animation dure 2 secondes */
+    animation: spin 2s linear 1, hideLoader 2s linear 1 forwards, hiden 2s forwards;
 }
 
 .loader-text {
     margin-top: 10px;
+    animation: hideLoader 2s linear 1 forwards;
 }
 
 .content {
-    display: none; /* Cacher le contenu par défaut */
+    display: none;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-/* L'animation pour masquer le loader après 2 secondes */
-.loader {
-    animation: spin 2s linear 1, hideLoader 1s 2s 1 forwards;
 }
 
 @keyframes hideLoader {
@@ -63,11 +59,22 @@ body {
         opacity: 0;
     }
 }
-
-/* Afficher le contenu une fois le loader masqué */
-.hideLoader {
-    display: none;
+@keyframes hiden {
+	0% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
 }
+
+/* Afficher le contenu après avoir masqué le loader */
+.loader-container .loader.hide + .loader-text.hide + .content {
+    display: block;
+}
+
 
 
 /**/
