@@ -313,6 +313,11 @@ body {
 				padding-top: 14px;
 			}
 	}
+	.BoxFooter {
+		display: flex;
+		flex-direction: row;
+		padding-left: 50px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
