@@ -1,3 +1,3 @@
-# Ohmyfood*
+# Ohmyfood
 
-https://ohmyfood-epbpbkg1e-hiuras-projects.vercel.app/
+ohmyfood-etml8gze9-hiuras-projects.vercel.app
