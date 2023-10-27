@@ -38,12 +38,14 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 25px 25px 0 0;
-  position: absolute;
-  top: 30%;
+  margin-top: -35px;
 }
 .cardposition .title {
   display: flex;
-  margin-bottom: -40px;
+  margin-top: 51px;
+  margin-bottom: 40px;
+  height: 41px;
+  font-family: "Shrikhand";
 }
 .cardposition .title .fa-heart {
   margin-left: 90%;
@@ -51,7 +53,7 @@ body {
 }
 .cardposition .title .far {
   position: relative;
-  top: -24px;
+  top: -33px;
 }
 .cardposition .title .fas {
   background-clip: text;
@@ -59,11 +61,15 @@ body {
   background-image: linear-gradient(red, blue);
   opacity: 0;
   position: relative;
-  top: -53px;
+  top: -68px;
   bottom: 0;
 }
 .cardposition .title:hover .fas {
   opacity: 1;
+}
+.cardposition .title h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .cardposition .Box_menu {
   display: flex;
@@ -72,11 +78,12 @@ body {
   gap: 10px;
   width: 95%;
   animation: appear 3s;
+  margin-top: -40px;
 }
 .cardposition .Box_menu .ma-ligne {
   height: 3px;
   width: 40px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: block;
   align-self: flex-start;
   margin-left: 50px;
@@ -84,18 +91,21 @@ body {
 .cardposition .Box_menu p {
   font-size: 15px;
   margin-top: 0;
+  font-family: "Roboto";
 }
 .cardposition .Box_menu h4 {
   font-size: 18px;
   margin-bottom: 5.94px;
+  font-family: "Roboto";
 }
 .cardposition .Box_menu h5 {
   display: flex;
   margin-bottom: 0;
-  padding-right: 75%;
+  align-self: flex-start;
+  margin-left: 48px;
 }
 .cardposition .Box_menu .menu {
-  background-color: #FFF;
+  background-color: #fff;
   width: 634px;
   height: 72px;
   border-radius: 15px 15px 15px 15px;
@@ -124,7 +134,7 @@ body {
   margin-left: auto;
   margin-right: -65px;
   margin-top: -76px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 15px 0px;
@@ -132,7 +142,7 @@ body {
   transition: margin-right 1s;
 }
 .cardposition .Box_menu .menu .menu_check i {
-  color: #FFF;
+  color: #fff;
   display: flex;
   align-items: center;
   font-size: 160%;
@@ -146,7 +156,7 @@ body {
   padding-left: 90%;
   transition-duration: 1s;
 }
-.cardposition .Box_menu .menu .menu_check::before:hover:hover {
+.cardposition .Box_menu .menu .fa-circle-check:hover {
   animation: rotate 1s;
 }
 @keyframes appear {
@@ -167,7 +177,7 @@ body {
 }
 
 .bouton {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -197,7 +207,6 @@ body {
   height: 114px;
   gap: 50px;
   padding-bottom: 30px;
-  margin-top: 898px;
 }
 .Footer img {
   width: 11px;
@@ -206,9 +215,9 @@ body {
 .Footer h1 {
   width: 137px;
   height: 27px;
-  color: #FFF;
+  color: #fff;
   margin-right: 25px;
-  font-family: "Shrikhand";
+  font-family: "Roboto";
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
@@ -216,17 +225,16 @@ body {
 .Footer .AideFooter {
   display: flex;
   flex-direction: row;
-  color: #FFF;
+  color: #fff;
   gap: 10px;
   font-size: 16px;
 }
 .Footer .AideFooter p {
-  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
 }
 .Footer .AideFooter .fa-handshake-angle {
-  color: #FFF;
+  color: #fff;
 }
 .Footer .AideFooter .Directionrow {
   margin-top: 15px;
@@ -252,14 +260,18 @@ body {
   .cardposition .card {
     width: 90%;
     margin: 0px 0 0 0%;
+    margin-top: -35px;
   }
   .cardposition .card h2 {
     display: flex;
     gap: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .cardposition .card .title {
     display: flex;
-    margin-bottom: -40px;
+    margin-top: 32px;
+    margin-bottom: 40px;
   }
   .cardposition .card .title .fa-heart {
     margin-left: 90%;
@@ -295,7 +307,7 @@ body {
     transition-duration: 1s;
   }
   .bouton {
-    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
     width: 218px;
     height: 50px;
     border-radius: 25px;
@@ -316,7 +328,6 @@ body {
     height: 114px;
     gap: 50px;
     padding-bottom: 30px;
-    margin-top: 898px;
   }
   .Footer img {
     width: 11px;
@@ -325,9 +336,9 @@ body {
   .Footer h1 {
     width: 137px;
     height: 27px;
-    color: #FFF;
+    color: #fff;
     margin-right: 25px;
-    font-family: "Shrikhand";
+    font-family: "Roboto";
     font-style: normal;
     font-size: 18px;
     font-weight: 400;
@@ -335,17 +346,16 @@ body {
   .Footer .AideFooter {
     display: flex;
     flex-direction: row;
-    color: #FFF;
+    color: #fff;
     gap: 10px;
     font-size: 16px;
   }
   .Footer .AideFooter p {
-    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
   }
   .Footer .AideFooter .fa-handshake-angle {
-    color: #FFF;
+    color: #fff;
   }
   .Footer .AideFooter .Directionrow {
     margin-top: 15px;
@@ -371,7 +381,7 @@ body {
     margin-bottom: 13px;
     padding-left: 16px;
     padding-right: 19px;
-    font-family: "Shrikhand";
+    font-family: "Roboto";
   }
   .Headerimg {
     width: 100%;
@@ -397,9 +407,10 @@ body {
     color: red;
   }
   .cardposition .card {
-    width: 90%;
+    width: 100%;
     margin: 0;
     height: 1111px;
+    margin-top: -35px;
   }
   .cardposition .card h2 {
     display: flex;
@@ -419,7 +430,7 @@ body {
     justify-content: center;
   }
   .btn .bouton {
-    background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
     width: 218px;
     height: 50px;
     border-radius: 25px;
@@ -441,7 +452,6 @@ body {
     align-items: baseline;
     gap: 0px;
     padding-bottom: 0px;
-    margin-top: 1108px;
   }
   .Footer img {
     display: flex;
@@ -453,7 +463,7 @@ body {
     padding-top: 22px;
     padding-left: 25px;
     margin-bottom: 16px;
-    color: #FFF;
+    color: #fff;
   }
   .Footer span {
     display: flex;
@@ -472,7 +482,7 @@ body {
     padding-bottom: 22px;
   }
   .Footer .AideFooter p {
-    color: #FFF;
+    color: #fff;
     padding-left: 25px;
     margin-top: 0px;
     margin-bottom: 0px;

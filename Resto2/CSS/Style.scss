@@ -1,421 +1,559 @@
 $color_1: rgba(246, 246, 246, 1);
 $color_2: red;
-$color_3: #FFF;
-$color_border: #99E2D0;
-$font-family_1:'Shrikhand';
-$font-family_2: 'Roboto';
+$color_3: #fff;
+$color_border: #99e2d0;
+$font-family_1: "Shrikhand";
+$font-family_2: "Roboto";
 $background-color_footer: #353535;
-$anim-color: #99E2D0;
-$gradiant: linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%);
-$card-color: #F6F6F6;
-$animationbouton: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-$btn: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+$anim-color: #99e2d0;
+$gradiant: linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%);
+$card-color: #f6f6f6;
+$animationbouton: var(
+  --Button-Gradient,
+  linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+);
+$btn: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  ),
+  linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+$font-family_1: "Roboto";
+$font-family_2: "Shrikhand";
 
 body {
-	margin: 0px;
+  margin: 0px;
 }
-	.logodusite {
-		display: flex;
-		justify-content: center;
-			.logo {
-				display: flex;
-				width: 200px;
-				height: 34px;
-				margin-bottom: 32px;
-				margin-top: 30px;
-}
+.logodusite {
+  display: flex;
+  justify-content: center;
+  .logo {
+    display: flex;
+    width: 200px;
+    height: 34px;
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
 }
 .BackButton {
-	position: absolute;
-	top: 2%;
-	margin-left: 17px;
+  position: absolute;
+  top: 2%;
+  margin-left: 17px;
 }
 .Headerimg {
-	object-fit: cover;
-	width: 100%;
-	height: 400px;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
 }
 
 .cardposition {
-	display: flex;
-	justify-content: center;
-.card {
-	background-color: $color_1;
-	width: 1055px;
-	height: 1221px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 25px 25px 0 0;
-	position: absolute;
-	top: 30%;
+  display: flex;
+  justify-content: center;
+  .card {
+    background-color: $color_1;
+    width: 1055px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px 25px 0 0;
+	margin-top: -35px;
   }
   .title {
-	display: flex;
+    display: flex;
+    margin-top: 51px;
+    margin-bottom: 40px;
+    height: 41px;
+    font-family: $font-family_2;
+    .fa-heart {
+      margin-left: 90%;
+      font-size: 100%;
+    }
+
+    .far {
+      position: relative;
+      top: -26px;
+    }
+
+    .fas {
+      background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(red, blue);
+      opacity: 0;
+      position: relative;
+      top: -55px;
+      bottom: 0;
+    }
+
+    &:hover {
+      .fas {
+        opacity: 1;
+      }
+    }
+    h2 {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
   }
-  
+
   .Box_menu {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	width: 95%;
-	animation: appear 3s;
-	.ma-ligne {
-		height: 3px;
-		width: 40px;
-		background-color: $color_border;
-		display: block; 
-		align-self: flex-start;
-		margin-left: 50px;
-	}
-	p{
-		font-size: 15px;
-		margin-top: 0;
-	}
-	h4 {
-		font-size: 18px;
-		margin-bottom: 5.94px;
-	}
-	  h5 {
-		display: flex;
-		margin-bottom: 0;
-		padding-right: 75%;
-	  }
-	.menu {
-	  background-color: $color_3;
-	  width: 634px;
-	  height: 72px;
-	  border-radius: 15px 15px 15px 15px;
-	  overflow: hidden;
-	  width: 100%;
-	  cursor: pointer;
-	  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-		.description {
-			margin-top: -8px;
-  			margin-left: 20px;
-			width: 572px;
-			height: 42px;
-		}
-	.menu_price {
-		display: flex;
-		padding-left: 95%;
-		transition: padding-left 1s;
-		position:relative;
-		top: -6px;
-	}
-	.menu_check {
-		display: flex;
-		width: 59px;
-		height: 73px;
-		margin-left: auto;
-		margin-right: -65px;
-		margin-top: -76px;
-		background-color: $anim-color;
-		justify-content: center;
-		align-items: center;
-		border-radius: 0px 0px 15px 0px;
-		position: relative;
-			i {
-				color: $color_3;
-				display: flex;
-  				align-items: center;
-				font-size: 160%;
-			}
-			transition: margin-right 1s
-		}
-	&:hover .menu_check {
-		margin-right: 0;
-		transition-duration: 1s;
-	}	
-	&:hover .menu_price {
-		padding-left: 90%;
-		transition-duration: 1s;
-	}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    animation: appear 3s;
+    margin-top: -40px;
+    .ma-ligne {
+      height: 3px;
+      width: 40px;
+      background-color: $color_border;
+      display: block;
+      align-self: flex-start;
+      margin-left: 50px;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 0;
+      font-family: $font-family_1;
+    }
+    h4 {
+      font-size: 18px;
+      margin-bottom: 5.94px;
+      font-family: $font-family_1;
+    }
+    h5 {
+      display: flex;
+      margin-bottom: 0;
+      align-self: flex-start;
+      margin-left: 48px;
+    }
+    .menu {
+      background-color: $color_3;
+      width: 634px;
+      height: 72px;
+      border-radius: 15px 15px 15px 15px;
+      overflow: hidden;
+      width: 100%;
+      cursor: pointer;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      .description {
+        margin-top: -8px;
+        margin-left: 20px;
+        width: 572px;
+        height: 42px;
+      }
+      .menu_price {
+        display: flex;
+        padding-left: 95%;
+        transition: padding-left 1s;
+        position: relative;
+        top: -6px;
+      }
+      .menu_check {
+        display: flex;
+        width: 59px;
+        height: 73px;
+        margin-left: auto;
+        margin-right: -65px;
+        margin-top: -76px;
+        background-color: $anim-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 0px 15px 0px;
+        position: relative;
+        i {
+          color: $color_3;
+          display: flex;
+          align-items: center;
+          font-size: 160%;
+        }
+        transition: margin-right 1s;
+      }
+      &:hover .menu_check {
+        margin-right: 0;
+        transition-duration: 1s;
+        animation: rotate 1s;
+      }
+      &:hover .menu_price {
+        padding-left: 90%;
+        transition-duration: 1s;
+      }
+      .menu_check::before:hover {
+        &:hover {
+          animation: rotate 1s;
+        }
+      }
+    }
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
-  @keyframes appear {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-  }
-}
 }
 
 .bouton {
-	background: $btn;
-	width: 218px;
-	height: 50px;
-	border-radius: 25px;
-	border-width: 0px;
-	border-left-style: solid;
-	display: flex;
-	justify-content: center;
-	margin-left: 82px;
-	margin-right: 75px;
-	color: $color_1;
-	margin-bottom: 40px;
-	margin-top: 40px;
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
-		&:hover {
-			opacity: 70%;
-			transition-duration: 1s;
-			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
-		}
+  background: $btn;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border-width: 0px;
+  border-left-style: solid;
+  display: flex;
+  justify-content: center;
+  margin-left: 82px;
+  margin-right: 75px;
+  color: $color_1;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  &:hover {
+    opacity: 70%;
+    transition-duration: 1s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+  }
 }
 
 .Footer {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: flex-end;
-	background: $background-color_footer;
-	width: 100%;
-	height: 114px;
-	gap: 50px;
-	padding-bottom: 30px;
-	margin-top: 996px;
-	img {
-		width: 11px;
-		height: 13px;
-	}
-	h1 {
-		width: 137px;
-		height: 27px;
-		color: $color_3;
-		margin-right: 25px;
-		font-family: $font-family_1;
-		font-style: normal;
-		font-size: 18px;
-		font-weight: 400;
-	}
-	.AideFooter {
-		display: flex;
-		flex-direction: row;
-		color: $color_3;
-		gap: 10px;
-		font-size: 16px;
-			p {
-			font-family: $font-family_2;
-			font-size: 16px;
-			font-style: normal;
-			}
-			.fa-handshake-angle{
-				color: $color_3;
-			}
-			.Directionrow {
-				margin-top: 15px;
-			}
-	}
-	.BoxFooter{
-		padding-left: 50px;
-		display: flex;
-		gap: 10px;
-	}
-	}
-
-
-@media screen and (max-width:1024px) {
-
-	.logodusite {
-		display: flex;
-		justify-content: center;
-			.logo {
-				display: flex;
-				width: 200px;
-				height: 34px;
-				margin-bottom: 32px;
-				margin-top: 30px;
-}
-}
-.cardposition {
-	.card {
-	  width: 90%;
-	  margin: 0px 0 0 0%;
-  
-	  h2 {
-		display: flex;
-		gap: 10px;
-	  }
-  
-	  .Box_menu {
-		.menu {
-		  width: 100%;
-			.menu_check {
-				margin-top: -77px;
-			}
-		  &:hover {
-			.menu_price {
-			  padding-left: 88%;
-			  transition-duration: 1s;
-			}
-		  }
-		}
-	  }
-	}
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  background: $background-color_footer;
+  width: 100%;
+  height: 114px;
+  gap: 50px;
+  padding-bottom: 30px;
+  img {
+    width: 11px;
+    height: 13px;
   }
-  
-
-.bouton {
-	background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
-	width: 218px;
-	height: 50px;
-	border-radius: 25px;
-	border-width: 0px;
-	border-left-style: solid;
-	margin-left: 82px;
-	margin-right: 75px;
-	color: $color_1;
-	margin-bottom: 40px;
-	margin-top: 40px;
+  h1 {
+    width: 137px;
+    height: 27px;
+    color: $color_3;
+    margin-right: 25px;
+    font-family: $font-family_1;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .AideFooter {
+    display: flex;
+    flex-direction: row;
+    color: $color_3;
+    gap: 10px;
+    font-size: 16px;
+    p {
+      font-size: 16px;
+      font-style: normal;
+    }
+    .fa-handshake-angle {
+      color: $color_3;
+    }
+    .Directionrow {
+      margin-top: 15px;
+    }
+  }
+  .BoxFooter {
+    padding-left: 50px;
+    display: flex;
+    gap: 10px;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .logodusite {
+    display: flex;
+    justify-content: center;
+    .logo {
+      display: flex;
+      width: 200px;
+      height: 34px;
+      margin-bottom: 32px;
+      margin-top: 30px;
+    }
+  }
+  .cardposition {
+    .card {
+      width: 90%;
+      margin: 0px 0 0 0%;
+	  margin-top: -35px;
+      h2 {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      .title {
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        .fa-heart {
+          margin-left: 90%;
+          font-size: 100%;
+        }
 
+        .far {
+          margin-left: 0;
+          position: relative;
+          top: 0;
+        }
+
+        .fas {
+          background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(red, blue);
+          opacity: 0;
+          position: relative;
+          top: 0px;
+          left: -34px;
+          bottom: 0;
+          margin-left: 0;
+        }
+
+        &:hover {
+          .fas {
+            opacity: 1;
+          }
+        }
+      }
+
+      .Box_menu {
+        .menu {
+          width: 100%;
+          .menu_check {
+            margin-top: -77px;
+          }
+          &:hover {
+            .menu_price {
+              padding-left: 88%;
+              transition-duration: 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bouton {
+    background: var(
+      --Button-Gradient,
+      linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%)
+    );
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-left-style: solid;
+    margin-left: 82px;
+    margin-right: 75px;
+    color: $color_1;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .Footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    background: $background-color_footer;
+    width: 100%;
+    height: 114px;
+    gap: 50px;
+    padding-bottom: 30px;
+    img {
+      width: 11px;
+      height: 13px;
+    }
+    h1 {
+      width: 137px;
+      height: 27px;
+      color: $color_3;
+      margin-right: 25px;
+      font-family: $font-family_1;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .AideFooter {
+      display: flex;
+      flex-direction: row;
+      color: $color_3;
+      gap: 10px;
+      font-size: 16px;
+      p {
+        font-size: 16px;
+        font-style: normal;
+      }
+      .fa-handshake-angle {
+        color: $color_3;
+      }
+      .Directionrow {
+        margin-top: 15px;
+      }
+    }
+    .BoxFooter {
+      padding-left: 50px;
+      display: flex;
+      gap: 10px;
+    }
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .logodusite {
+    display: flex;
+    justify-content: center;
+    .logo {
+      display: flex;
+      width: 162px;
+      height: 44px;
+      margin-top: 14px;
+      margin-left: 89px;
+      margin-right: 89px;
+      margin-bottom: 13px;
+      padding-left: 16px;
+      padding-right: 19px;
+      font-family: $font-family_1;
+    }
+  }
+  .Headerimg {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    margin-bottom: -71px;
+  }
+  .BackButton {
+    margin-top: 0px;
+    margin-left: 17px;
+  }
 
-@media screen and (max-width:768px) {
-	.logodusite{
-		display: flex;
-		justify-content: center;
-			.logo {
-			display: flex;
-			width: 162px;
-			height: 44px;
-			margin-top: 14px;
-			margin-left: 89px;
-			margin-right: 89px;
-			margin-bottom: 13px;
-			padding-left: 16px;
-			padding-right: 19px;
-			font-family: $font-family_1;
-	}
-}
-	.Headerimg {
-		width: 100%;
-		height: 275px;
-		object-fit: cover;
-		margin-bottom: -71px;
-	}
-	.BackButton {
-		margin-top: 0px;
-  		margin-left: 17px;
-}
+  .euro {
+    justify-content: right;
+    display: flex;
+    margin-top: -17px;
+  }
+  .like {
+    position: absolute;
+    margin-left: 310px;
+    top: 2%;
+    a {
+      &:active {
+        color: $color_2;
+      }
+    }
+  }
 
-	.euro {
-		justify-content: right;
-		display: flex;
-		margin-top: -17px;
-	}
-	.like {
-		position: absolute;
-		margin-left: 310px;
-		top: 2%;
-		a {
-			&:active {
-				color: $color_2;
-			}
-		}
-	}
+  .cardposition {
+    .card {
+      width: 100%;
+      margin: 0;
+      height: 1175px;
+      h2 {
+        display: flex;
+        gap: 10px;
+      }
 
-	.cardposition {
-		.card {
-		  width: 90%;
-		  margin: 0;
-		  
-		  h2 {
-			display: flex;
-			gap: 10px;
-		  }
-		  
-		  .Box_menu {
-			.menu {
-			  width: 100%;
-			  
-			  .menu_check {
-				margin-top: -60px;
-			  }
-			  
-			  &:hover {
-				.menu_price {
-				  padding-left: 85%;
-				}
-			  }
-			}
-		  }
-		}
-	  }
-	  
+      .Box_menu {
+        .menu {
+          width: 100%;
 
-	
-	.btn {
-		display: flex;
-		justify-content: center;
-			.bouton {
-			background: var(--Button-Gradient, linear-gradient(3deg, #9356DC -11.44%, #FF79DA 123.93%));
-			width: 218px;
-			height: 50px;
-			border-radius: 25px;
-			border-width: 0px;
-			border-left-style: solid;
-			margin-left: 82px;
-			margin-right: 75px;
-			color: $color_1;
-			margin-bottom: 40px;
-			margin-top: 40px;
-			padding: 0;
-	}
-	}
-	.Footer {
-		display: flex;
-		flex-direction: column;
-		background: var(--Grey, #353535);
-		width: 100%;
-		height: 100%;
-		align-items: baseline;
-		gap: 0px;
-		padding-bottom: 0px;
-		margin-top: 1198px;
-		img {
-			display: flex;
-			flex-direction: row;
-			width: 11px;
-			height: 13px;
-		}
-		h1 {
-			padding-top: 22px;
-			padding-left: 25px;
-			margin-bottom: 16px;
-			color: $color_3;
-		}
-		span {
-		display: flex;
-		flex-direction: row;
-		gap: 10px;
-		padding-left: 25px;
-		}
-		.Directionrow {
-		display: flex;
-		flex-direction: row;
-		gap: 10px;
-		}
-		.AideFooter {
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 22px;
-			p{
-				color: $color_3;
-				padding-left: 25px;
-				margin-top: 0px;
-  				margin-bottom: 0px;
-			}
-			.BoxFooter {
-				display: flex;
-    			gap: 10px;
-    			flex-direction: column;
-				padding-left: 30px;
-			}
-		}
-}
+          .menu_check {
+            margin-top: -60px;
+          }
+
+          &:hover {
+            .menu_price {
+              padding-left: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    .bouton {
+      background: var(
+        --Button-Gradient,
+        linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%)
+      );
+      width: 218px;
+      height: 50px;
+      border-radius: 25px;
+      border-width: 0px;
+      border-left-style: solid;
+      margin-left: 82px;
+      margin-right: 75px;
+      color: $color_1;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      padding: 0;
+    }
+  }
+
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--Grey, #353535);
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+    gap: 0px;
+    padding-bottom: 0px;
+    img {
+      display: flex;
+      flex-direction: row;
+      width: 11px;
+      height: 13px;
+    }
+    h1 {
+      padding-top: 22px;
+      padding-left: 25px;
+      margin-bottom: 16px;
+      color: $color_3;
+    }
+    span {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding-left: 25px;
+    }
+    .Directionrow {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .AideFooter {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 22px;
+      p {
+        color: $color_3;
+        padding-left: 25px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .BoxFooter {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding-left: 30px;
+      }
+    }
+  }
 }
