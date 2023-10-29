@@ -18,9 +18,7 @@ $btn: linear-gradient(
     rgba(255, 255, 255, 0.15) 100%
   ),
   linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-$font-family_1: "Roboto";
-$font-family_2: "Shrikhand";
-
+  
 body {
   margin: 0px;
 }
@@ -37,7 +35,7 @@ body {
 }
 .BackButton {
   position: absolute;
-  top: 2%;
+  top: 3%;
   margin-left: 17px;
 }
 .Headerimg {
@@ -51,7 +49,7 @@ body {
   justify-content: center;
   .card {
     background-color: $color_1;
-    width: 1055px;
+    width: 990px;
     height: 1123px;
     display: flex;
     flex-direction: column;
@@ -110,23 +108,23 @@ body {
       background-color: $color_border;
       display: block;
       align-self: flex-start;
-      margin-left: 50px;
+      margin-left: 183px;
     }
     p {
       font-size: 15px;
       margin-top: 0;
-      font-family: $font-family_1;
+      font-family: $font-family_2;
     }
     h4 {
       font-size: 18px;
       margin-bottom: 5.94px;
-      font-family: $font-family_1;
+      font-family: $font-family_2;
     }
     h5 {
       display: flex;
       margin-bottom: 0;
       align-self: flex-start;
-      margin-left: 48px;
+      margin-left: 183px;
     }
     .menu {
       background-color: $color_3;
@@ -134,7 +132,6 @@ body {
       height: 72px;
       border-radius: 15px 15px 15px 15px;
       overflow: hidden;
-      width: 100%;
       cursor: pointer;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
       .description {
@@ -175,7 +172,7 @@ body {
         transition-duration: 1s;
       }
       &:hover .menu_price {
-        padding-left: 90%;
+        padding-left: 85%;
         transition-duration: 1s;
       }
       &:hover {
@@ -244,9 +241,10 @@ body {
     color: $color_3;
     margin-right: 25px;
     font-family: $font-family_1;
-    font-style: normal;
     font-size: 18px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal; 
   }
   .AideFooter {
     display: flex;
@@ -270,6 +268,10 @@ body {
     display: flex;
     gap: 10px;
   }
+  span {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -284,6 +286,11 @@ body {
       margin-top: 30px;
     }
   }
+  .BackButton {
+    position: absolute;
+    top: 3%;
+    margin-left: 17px;
+    }  
   .cardposition {
     .card {
       width: 90%;
@@ -327,17 +334,22 @@ body {
             opacity: 1;
           }
         }
+        .ma-ligne {
+          margin-left: 28px;
+        }
+        h5 {
+          margin-left: 28px;
+        }
       }
 
       .Box_menu {
         .menu {
-          width: 100%;
           .menu_check {
             margin-top: -77px;
           }
           &:hover {
             .menu_price {
-              padding-left: 88%;
+              padding-left: 85%;
               transition-duration: 1s;
             }
           }
@@ -412,6 +424,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  
   .logodusite {
     display: flex;
     justify-content: center;
@@ -428,6 +441,7 @@ body {
       font-family: $font-family_1;
     }
   }
+  
   .Headerimg {
     width: 100%;
     height: 275px;
@@ -461,28 +475,42 @@ body {
       margin: 0;
       height: 1111px;
       margin-top: -35px;
+  
       h2 {
         display: flex;
         gap: 10px;
       }
-
+  
       .Box_menu {
         .menu {
           width: 100%;
-
+  
           .menu_check {
             margin-top: -60px;
           }
-
+  
           &:hover {
             .menu_price {
-              padding-left: 85%;
+              padding-left: 70%;
             }
+          }
+  
+          h5 {
+            margin-left: 0;
+          }
+  
+          .ma-ligne {
+            margin-left: 0;
+          }
+  
+          .menu_price {
+            padding-left: 90%;
           }
         }
       }
     }
   }
+  
 
   .btn {
     display: flex;
@@ -552,7 +580,7 @@ body {
         display: flex;
         gap: 10px;
         flex-direction: column;
-        padding-left: 30px;
+        padding-left: 0px;
       }
     }
   }
