@@ -8,17 +8,13 @@ $background-color_footer: #353535;
 $anim-color: #99e2d0;
 $gradiant: linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%);
 $card-color: #f6f6f6;
-$animationbouton: var(
-  --Button-Gradient,
-  linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-);
-$btn: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.15) 100%
-  ),
-  linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-  
+$animationbouton: var(--Button-Gradient,linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
+$btn:linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+
+
+
+
 body {
   margin: 0px;
 }
@@ -50,7 +46,7 @@ body {
   .card {
     background-color: $color_1;
     width: 990px;
-    height: 1123px;
+    height: 1153px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +66,7 @@ body {
 
     .far {
       position: relative;
-      top: -33px;
+      top: -37px;
     }
 
     .fas {
@@ -79,7 +75,7 @@ body {
       background-image: linear-gradient(#9356DC, #FF79DA);
       opacity: 0;
       position: relative;
-      top: -68px;
+      top: -78px;
       bottom: 0;
     }
 
@@ -91,6 +87,11 @@ body {
     h2 {
       margin-bottom: 0px;
       margin-top: 0px;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; 
+      font-family: $font-family_1;
     }
   }
 
@@ -99,7 +100,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 95%;
+    width: 634px;
     animation: appear 3s;
     margin-top: -40px;
     .ma-ligne {
@@ -108,12 +109,12 @@ body {
       background-color: $color_border;
       display: block;
       align-self: flex-start;
-      margin-left: 183px;
     }
     p {
       font-size: 15px;
       margin-top: 0;
       font-family: $font-family_2;
+
     }
     h4 {
       font-size: 18px;
@@ -124,7 +125,14 @@ body {
       display: flex;
       margin-bottom: 0;
       align-self: flex-start;
-      margin-left: 183px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      overflow: hidden;
+      color: #000;
+      text-overflow: ellipsis;
+      white-space: nowrap; 
     }
     .menu {
       background-color: $color_3;
@@ -145,7 +153,13 @@ body {
         padding-left: 95%;
         transition: padding-left 1s;
         position: relative;
-        top: -6px;
+        top: -15px;
+        right: 15px;
+        font-size: 15.043px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-family: $font-family_2;
       }
       .menu_check {
         display: flex;
@@ -202,7 +216,7 @@ body {
 
 .bouton {
   background: $btn;
-  width: 218px;
+  width: 186px;
   height: 50px;
   border-radius: 25px;
   border-width: 0px;
@@ -219,6 +233,13 @@ body {
     opacity: 70%;
     transition-duration: 1s;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+  }
+  p {
+    font-family: $font-family_2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
   }
 }
 
@@ -255,6 +276,9 @@ body {
     p {
       font-size: 16px;
       font-style: normal;
+      font-weight: 400;
+      line-height: normal; 
+      font-family: $font-family_2;
     }
     .fa-handshake-angle {
       color: $color_3;
@@ -271,6 +295,9 @@ body {
   span {
     display: flex;
     gap: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
 
@@ -314,7 +341,8 @@ body {
         .far {
           margin-left: 0;
           position: relative;
-          top: 0;
+          top: 7px;
+          left: 15px;
         }
 
         .fas {
@@ -323,8 +351,8 @@ body {
           background-image: linear-gradient(#9356DC, #FF79DA);
           opacity: 0;
           position: relative;
-          top: 0px;
-          left: -34px;
+          top: 7px;
+          left: -23px;
           bottom: 0;
           margin-left: 0;
         }
@@ -416,7 +444,7 @@ body {
       }
     }
     .BoxFooter {
-      padding-left: 50px;
+      padding-left: 25px;
       display: flex;
       gap: 10px;
     }
@@ -451,22 +479,13 @@ body {
   .BackButton {
     margin-top: 0px;
     margin-left: 17px;
+    top: 18.4px;
   }
 
   .euro {
     justify-content: right;
     display: flex;
     margin-top: -17px;
-  }
-  .like {
-    position: absolute;
-    margin-left: 310px;
-    top: 2%;
-    a {
-      &:active {
-        color: $color_2;
-      }
-    }
   }
 
   .cardposition {
@@ -475,13 +494,20 @@ body {
       margin: 0;
       height: 1111px;
       margin-top: -35px;
-  
+      .title {
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        align-self: flex-start;
+        margin-left: 24px;
+      }
       h2 {
         display: flex;
         gap: 10px;
       }
   
       .Box_menu {
+        width: 90%;
         .menu {
           width: 100%;
   
@@ -491,7 +517,7 @@ body {
   
           &:hover {
             .menu_price {
-              padding-left: 70%;
+              padding-left: 88%;
             }
           }
   
@@ -504,7 +530,8 @@ body {
           }
   
           .menu_price {
-            padding-left: 90%;
+            bottom: 0px;
+             top: 0px;
           }
         }
       }
@@ -583,5 +610,26 @@ body {
         padding-left: 0px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cardposition{
+    .card {
+  .title {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    margin-left: 15px;
+    width: 336px;
+      .far {
+        left: -3px;
+      }
+      .fas {
+        left: -41px;
+      }
+  }
+  }
   }
 }
