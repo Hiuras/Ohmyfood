@@ -2,6 +2,18 @@ body {
   margin: 0px;
 }
 
+.logodusite, .cardposition, .Footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.Headerimg {
+  object-fit: cover;
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+}
+
 .logodusite {
   display: flex;
   justify-content: center;
@@ -96,6 +108,7 @@ body {
   font-size: 15px;
   margin-top: 0;
   font-family: "Roboto";
+  width: 76%;
 }
 .cardposition .Box_menu h4 {
   font-size: 18px;
@@ -121,19 +134,20 @@ body {
   height: 72px;
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .cardposition .Box_menu .menu .description {
   margin-top: -8px;
   margin-left: 20px;
-  width: 572px;
   height: 42px;
 }
 .cardposition .Box_menu .menu .menu_price {
   display: flex;
   padding-left: 95%;
-  transition: padding-left 1s;
+  transition: transform 1s ease;
   position: relative;
   top: -15px;
   right: 15px;
@@ -168,8 +182,7 @@ body {
   transition-duration: 1s;
 }
 .cardposition .Box_menu .menu:hover .menu_price {
-  padding-left: 85%;
-  transition-duration: 1s;
+  transform: translateX(-60px);
 }
 .cardposition .Box_menu .menu:hover i {
   animation: rotate 1s ease;
@@ -344,10 +357,6 @@ body {
   .cardposition .card .Box_menu .menu .menu_check {
     margin-top: -77px;
   }
-  .cardposition .card .Box_menu .menu:hover .menu_price {
-    padding-left: 85%;
-    transition-duration: 1s;
-  }
   .bouton {
     background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
     width: 218px;
@@ -454,9 +463,13 @@ body {
     align-self: flex-start;
     margin-left: 24px;
   }
+  .cardposition .card .title .fas {
+    left: -21px;
+  }
   .cardposition .card h2 {
     display: flex;
     gap: 10px;
+    font-size: 26px;
   }
   .cardposition .card .Box_menu {
     width: 90%;
@@ -467,9 +480,6 @@ body {
   .cardposition .card .Box_menu .menu .menu_check {
     margin-top: -60px;
   }
-  .cardposition .card .Box_menu .menu:hover .menu_price {
-    padding-left: 88%;
-  }
   .cardposition .card .Box_menu .menu h5 {
     margin-left: 0;
   }
@@ -479,6 +489,12 @@ body {
   .cardposition .card .Box_menu .menu .menu_price {
     bottom: 0px;
     top: 0px;
+  }
+  .cardposition .card .Box_menu .menu p, .cardposition .card .Box_menu .menu h4 {
+    width: 68%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .btn {
     display: flex;
@@ -549,20 +565,50 @@ body {
     padding-left: 0px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 340px) {
+  .cardposition .card {
+    width: 100%;
+    margin: 0;
+    height: 1111px;
+    margin-top: -35px;
+  }
   .cardposition .card .title {
     display: flex;
     margin-top: 32px;
     margin-bottom: 40px;
     align-self: flex-start;
-    margin-left: 15px;
-    width: 336px;
-  }
-  .cardposition .card .title .far {
-    left: -3px;
+    margin-left: 24px;
   }
   .cardposition .card .title .fas {
-    left: -41px;
+    left: -19px;
+  }
+  .cardposition .card h2 {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    width: 291.333px;
+  }
+  .cardposition .card .Box_menu {
+    width: 90%;
+  }
+  .cardposition .card .Box_menu .menu {
+    width: 100%;
+  }
+  .cardposition .card .Box_menu .menu .title {
+    width: 296px;
+  }
+  .cardposition .card .Box_menu .menu .menu_check {
+    margin-top: -60px;
+  }
+  .cardposition .card .Box_menu .menu h5 {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .ma-ligne {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .menu_price {
+    bottom: 0px;
+    top: 0px;
   }
 }
 

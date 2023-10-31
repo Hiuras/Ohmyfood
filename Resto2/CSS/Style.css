@@ -1,5 +1,9 @@
 body {
-  margin: 0px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logodusite {
@@ -16,7 +20,7 @@ body {
 
 .BackButton {
   position: absolute;
-  top: 2%;
+  top: 3%;
   margin-left: 17px;
 }
 
@@ -32,8 +36,8 @@ body {
 }
 .cardposition .card {
   background-color: rgb(246, 246, 246);
-  width: 1055px;
-  height: 1200px;
+  width: 990px;
+  height: 1225px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +49,7 @@ body {
   margin-top: 51px;
   margin-bottom: 40px;
   height: 41px;
-  font-family: "Shrikhand";
+  font-family: "Roboto";
 }
 .cardposition .title .fa-heart {
   margin-left: 90%;
@@ -53,7 +57,7 @@ body {
 }
 .cardposition .title .far {
   position: relative;
-  top: -26px;
+  top: -37px;
 }
 .cardposition .title .fas {
   background-clip: text;
@@ -61,7 +65,7 @@ body {
   background-image: linear-gradient(#9356DC, #FF79DA);
   opacity: 0;
   position: relative;
-  top: -55px;
+  top: -78px;
   bottom: 0;
 }
 .cardposition .title:hover .fas {
@@ -70,13 +74,18 @@ body {
 .cardposition .title h2 {
   margin-bottom: 0px;
   margin-top: 0px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Shrikhand";
 }
 .cardposition .Box_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 95%;
+  width: 634px;
   animation: appear 3s;
   margin-top: -40px;
 }
@@ -86,12 +95,12 @@ body {
   background-color: #99e2d0;
   display: block;
   align-self: flex-start;
-  margin-left: 50px;
 }
 .cardposition .Box_menu p {
   font-size: 15px;
   margin-top: 0;
   font-family: "Roboto";
+  width: 76%;
 }
 .cardposition .Box_menu h4 {
   font-size: 18px;
@@ -102,7 +111,14 @@ body {
   display: flex;
   margin-bottom: 0;
   align-self: flex-start;
-  margin-left: 48px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cardposition .Box_menu .menu {
   background-color: #fff;
@@ -110,22 +126,28 @@ body {
   height: 72px;
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
-  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .cardposition .Box_menu .menu .description {
   margin-top: -8px;
   margin-left: 20px;
-  width: 572px;
   height: 42px;
 }
 .cardposition .Box_menu .menu .menu_price {
   display: flex;
   padding-left: 95%;
-  transition: padding-left 1s;
+  transition: transform 1s ease;
   position: relative;
-  top: -6px;
+  top: -15px;
+  right: 15px;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Roboto";
 }
 .cardposition .Box_menu .menu .menu_check {
   display: flex;
@@ -152,8 +174,7 @@ body {
   transition-duration: 1s;
 }
 .cardposition .Box_menu .menu:hover .menu_price {
-  padding-left: 90%;
-  transition-duration: 1s;
+  transform: translateX(-60px);
 }
 .cardposition .Box_menu .menu:hover i {
   animation: rotate 1s ease;
@@ -176,8 +197,8 @@ body {
 }
 
 .bouton {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-  width: 218px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  width: 186px;
   height: 50px;
   border-radius: 25px;
   border-width: 0px;
@@ -195,6 +216,13 @@ body {
   opacity: 70%;
   transition-duration: 1s;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+}
+.bouton p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .Footer {
@@ -216,10 +244,11 @@ body {
   height: 27px;
   color: #fff;
   margin-right: 25px;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Shrikhand";
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 .Footer .AideFooter {
   display: flex;
@@ -231,6 +260,9 @@ body {
 .Footer .AideFooter p {
   font-size: 16px;
   font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Roboto";
 }
 .Footer .AideFooter .fa-handshake-angle {
   color: #fff;
@@ -242,6 +274,13 @@ body {
   padding-left: 50px;
   display: flex;
   gap: 10px;
+}
+.Footer span {
+  display: flex;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1024px) {
@@ -255,6 +294,11 @@ body {
     height: 34px;
     margin-bottom: 32px;
     margin-top: 30px;
+  }
+  .BackButton {
+    position: absolute;
+    top: 3%;
+    margin-left: 17px;
   }
   .cardposition .card {
     width: 90%;
@@ -279,7 +323,8 @@ body {
   .cardposition .card .title .far {
     margin-left: 0;
     position: relative;
-    top: 0;
+    top: 7px;
+    left: 15px;
   }
   .cardposition .card .title .fas {
     background-clip: text;
@@ -287,23 +332,22 @@ body {
     background-image: linear-gradient(#9356DC, #FF79DA);
     opacity: 0;
     position: relative;
-    top: 0px;
-    left: -34px;
+    top: 7px;
+    left: -23px;
     bottom: 0;
     margin-left: 0;
   }
   .cardposition .card .title:hover .fas {
     opacity: 1;
   }
-  .cardposition .card .Box_menu .menu {
-    width: 100%;
+  .cardposition .card .title .ma-ligne {
+    margin-left: 28px;
+  }
+  .cardposition .card .title h5 {
+    margin-left: 28px;
   }
   .cardposition .card .Box_menu .menu .menu_check {
     margin-top: -77px;
-  }
-  .cardposition .card .Box_menu .menu:hover .menu_price {
-    padding-left: 88%;
-    transition-duration: 1s;
   }
   .bouton {
     background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
@@ -337,7 +381,7 @@ body {
     height: 27px;
     color: #fff;
     margin-right: 25px;
-    font-family: "Roboto";
+    font-family: "Shrikhand";
     font-style: normal;
     font-size: 18px;
     font-weight: 400;
@@ -360,7 +404,7 @@ body {
     margin-top: 15px;
   }
   .Footer .BoxFooter {
-    padding-left: 50px;
+    padding-left: 25px;
     display: flex;
     gap: 10px;
   }
@@ -380,7 +424,7 @@ body {
     margin-bottom: 13px;
     padding-left: 16px;
     padding-right: 19px;
-    font-family: "Roboto";
+    font-family: "Shrikhand";
   }
   .Headerimg {
     width: 100%;
@@ -391,28 +435,36 @@ body {
   .BackButton {
     margin-top: 0px;
     margin-left: 17px;
+    top: 18.4px;
   }
   .euro {
     justify-content: right;
     display: flex;
     margin-top: -17px;
   }
-  .like {
-    position: absolute;
-    margin-left: 310px;
-    top: 2%;
-  }
-  .like a:active {
-    color: red;
-  }
   .cardposition .card {
     width: 100%;
     margin: 0;
-    height: 1175px;
+    height: 1200px;
+    margin-top: -35px;
+  }
+  .cardposition .card .title {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+  .cardposition .card .title .fas {
+    left: -21px;
   }
   .cardposition .card h2 {
     display: flex;
     gap: 10px;
+    font-size: 26px;
+  }
+  .cardposition .card .Box_menu {
+    width: 90%;
   }
   .cardposition .card .Box_menu .menu {
     width: 100%;
@@ -420,8 +472,21 @@ body {
   .cardposition .card .Box_menu .menu .menu_check {
     margin-top: -60px;
   }
-  .cardposition .card .Box_menu .menu:hover .menu_price {
-    padding-left: 85%;
+  .cardposition .card .Box_menu .menu h5 {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .ma-ligne {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .menu_price {
+    bottom: 0px;
+    top: 0px;
+  }
+  .cardposition .card .Box_menu .menu p, .cardposition .card .Box_menu .menu h4 {
+    width: 68%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .btn {
     display: flex;
@@ -489,7 +554,53 @@ body {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .cardposition .card {
+    width: 100%;
+    margin: 0;
+    height: 1200px;
+    margin-top: -35px;
+  }
+  .cardposition .card .title {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+  .cardposition .card .title .fas {
+    left: -19px;
+  }
+  .cardposition .card h2 {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    width: 291.333px;
+  }
+  .cardposition .card .Box_menu {
+    width: 90%;
+  }
+  .cardposition .card .Box_menu .menu {
+    width: 100%;
+  }
+  .cardposition .card .Box_menu .menu .title {
+    width: 296px;
+  }
+  .cardposition .card .Box_menu .menu .menu_check {
+    margin-top: -60px;
+  }
+  .cardposition .card .Box_menu .menu h5 {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .ma-ligne {
+    margin-left: 0;
+  }
+  .cardposition .card .Box_menu .menu .menu_price {
+    bottom: 0px;
+    top: 0px;
   }
 }
 

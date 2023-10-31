@@ -16,7 +16,11 @@ $btn: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 12
 	font-style: normal;
 }
 body {
-	margin: 0px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Loader initial */
@@ -186,7 +190,7 @@ body {
 	padding: 0;
 	display: flex;
 	align-items: center;
-	gap: 25px;
+	gap: 5px;
 	border: 0;
 		i {
 			display: flex;
@@ -209,9 +213,8 @@ body {
 		p {
 			display: flex;
 			justify-content: center;
-			gap: 22px;
 			font-family: $font-family_1;
-			font-size: 16px;
+			font-size: 14px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: normal; 
@@ -323,7 +326,7 @@ body {
 	position: absolute;
 	margin-top: 30px;
 	background: $color_5;
-	width: 80px;
+	width: 61px;
 	height: 29px;
 	justify-content: center;
 	border-radius: 5px;
@@ -550,6 +553,10 @@ body {
 		align-items: center;
 		display: grid;
 		justify-self: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal; 
 		&:visited {
 			text-decoration: none;
 			color: $color_3;

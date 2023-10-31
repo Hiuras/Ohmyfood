@@ -12,12 +12,14 @@ $animationbouton: var(--Button-Gradient,linear-gradient(193deg, #9356dc -11.44%,
 $btn:linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 
-
-
-
 body {
-  margin: 0px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .logodusite {
   display: flex;
   justify-content: center;
@@ -114,7 +116,7 @@ body {
       font-size: 15px;
       margin-top: 0;
       font-family: $font-family_2;
-
+      width: 76%;
     }
     h4 {
       font-size: 18px;
@@ -140,18 +142,19 @@ body {
       height: 72px;
       border-radius: 15px 15px 15px 15px;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       cursor: pointer;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
       .description {
         margin-top: -8px;
         margin-left: 20px;
-        width: 572px;
         height: 42px;
       }
       .menu_price {
         display: flex;
         padding-left: 95%;
-        transition: padding-left 1s;
+        transition: transform 1s ease;
         position: relative;
         top: -15px;
         right: 15px;
@@ -186,8 +189,7 @@ body {
         transition-duration: 1s;
       }
       &:hover .menu_price {
-        padding-left: 85%;
-        transition-duration: 1s;
+        transform: translateX(-60px);
       }
       &:hover {
         i{
@@ -375,12 +377,6 @@ body {
           .menu_check {
             margin-top: -77px;
           }
-          &:hover {
-            .menu_price {
-              padding-left: 85%;
-              transition-duration: 1s;
-            }
-          }
         }
       }
     }
@@ -500,10 +496,14 @@ body {
         margin-bottom: 40px;
         align-self: flex-start;
         margin-left: 24px;
+        .fas {
+          left: -21px;
+        }
       }
       h2 {
         display: flex;
         gap: 10px;
+        font-size: 26px;
       }
   
       .Box_menu {
@@ -513,12 +513,6 @@ body {
   
           .menu_check {
             margin-top: -60px;
-          }
-  
-          &:hover {
-            .menu_price {
-              padding-left: 88%;
-            }
           }
   
           h5 {
@@ -532,6 +526,12 @@ body {
           .menu_price {
             bottom: 0px;
              top: 0px;
+          }
+          p, h4 {
+            width: 68%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
         }
       }
@@ -613,23 +613,54 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
-  .cardposition{
+@media screen and (max-width: 340px) {
+  .cardposition {
     .card {
-  .title {
-    display: flex;
-    margin-top: 32px;
-    margin-bottom: 40px;
-    align-self: flex-start;
-    margin-left: 15px;
-    width: 336px;
-      .far {
-        left: -3px;
+      width: 100%;
+      margin: 0;
+      height: 1111px;
+      margin-top: -35px;
+      .title {
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        align-self: flex-start;
+        margin-left: 24px;
+        .fas {
+          left: -19px;
+        }
       }
-      .fas {
-        left: -41px;
+      h2 {
+        display: flex;
+        gap: 10px;
+        font-size: 24px;
+        width: 291.333px;
       }
+      .Box_menu {
+        width: 90%;
+        .menu {
+          width: 100%;
+          .title {
+            width: 296px;
+          }
+          .menu_check {
+            margin-top: -60px;
+          }
+  
+          h5 {
+            margin-left: 0;
+          }
+  
+          .ma-ligne {
+            margin-left: 0;
+          }
+  
+          .menu_price {
+            bottom: 0px;
+             top: 0px;
+          }
+        }
+      }
+    }
   }
   }
-  }
-}

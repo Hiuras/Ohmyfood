@@ -5,7 +5,11 @@
 }
 
 body {
-  margin: 0px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Loader initial */
@@ -177,7 +181,7 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 5px;
   border: 0;
 }
 .FlexBoxResto i {
@@ -201,9 +205,8 @@ body {
 .FlexBoxResto p {
   display: flex;
   justify-content: center;
-  gap: 22px;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -316,7 +319,7 @@ body {
   position: absolute;
   margin-top: 30px;
   background: #99E2D0;
-  width: 80px;
+  width: 61px;
   height: 29px;
   justify-content: center;
   border-radius: 5px;
@@ -539,6 +542,10 @@ body {
     align-items: center;
     display: grid;
     justify-self: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
   .bouton:visited {
     text-decoration: none;
