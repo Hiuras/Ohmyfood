@@ -24,6 +24,7 @@ body {
   width: 100%;
   background-color: #FFF;
   z-index: 100000000;
+  max-width: 1440px;
 }
 
 .loader {
