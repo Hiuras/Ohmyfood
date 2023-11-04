@@ -1,9 +1,5 @@
 @charset "UTF-8";
-* {
-  font-family: "Roboto";
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
   max-width: 1440px;
   width: 100%;
@@ -22,7 +18,7 @@ body {
   animation: hiden 3s forwards;
   position: absolute;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 100000000;
   max-width: 1440px;
 }
@@ -96,8 +92,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #EAEAEA;
+  background: #eaeaea;
   gap: 17px;
+}
+.localisation h4 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .Backgroundhaut {
@@ -105,7 +108,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 .Backgroundhaut h2 {
   font-family: "Roboto";
@@ -115,6 +118,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #000;
 }
 .Backgroundhaut p {
   height: 46px;
@@ -128,7 +132,7 @@ body {
 }
 
 .bouton {
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -138,7 +142,7 @@ body {
   justify-self: center;
   align-items: center;
   margin-bottom: 30px;
-  color: #FFF;
+  color: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-style: normal;
@@ -184,7 +188,7 @@ body {
   width: 322px;
   height: 72px;
   border-radius: 20px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   display: flex;
@@ -195,19 +199,20 @@ body {
 .FlexBoxResto i {
   display: flex;
   flex-direction: row;
-  color: #7E7E7E;
+  color: #7e7e7e;
   width: 18px;
   height: 18px;
   font-size: 16px;
   padding-right: 10px;
+  margin-top: 2px;
 }
 .FlexBoxResto span {
   display: grid;
   align-content: center;
   width: 24px;
   height: 24px;
-  color: #FFF;
-  background: #9356DC;
+  color: #fff;
+  background: #9356dc;
   border-radius: 50%;
   margin-left: -10px;
 }
@@ -223,11 +228,11 @@ body {
   padding-right: 5px;
 }
 .FlexBoxResto .color {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .FlexBoxCardBG {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-top: 50px;
 }
 
@@ -264,7 +269,7 @@ body {
 .card {
   width: 46%;
   height: auto;
-  background: #FFF;
+  background: #fff;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
@@ -290,12 +295,14 @@ body {
   line-height: normal;
   font-size: 18px;
   font-family: "Roboto";
+  color: #000;
 }
 .card .cardtitle p {
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  color: #000;
 }
 .card .cardtitle .positionheart {
   height: 31.4px;
@@ -321,7 +328,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 0;
   display: flex;
   justify-content: flex-end;
@@ -338,6 +345,7 @@ body {
   margin-bottom: 28px;
   margin-top: 30px;
   font-size: 24px;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -349,7 +357,7 @@ body {
 .etiquette {
   position: absolute;
   margin-top: 20px;
-  background: #99E2D0;
+  background: #99e2d0;
   width: 61px;
   height: 29px;
   justify-content: center;
@@ -399,7 +407,7 @@ body {
 .Footer h1 {
   width: 137px;
   height: 27px;
-  color: #FFF;
+  color: #fff;
   margin-right: 25px;
   font-family: "Shrikhand";
   font-style: normal;
@@ -409,9 +417,12 @@ body {
 .Footer .AideFooter {
   display: flex;
   flex-direction: row;
-  color: #FFF;
+  color: #fff;
   gap: 10px;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .Footer .AideFooter p {
   font-family: "Roboto";
@@ -422,6 +433,9 @@ body {
   padding-top: 14px;
   display: flex;
   gap: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .Footer .BoxFooter {
   display: flex;
@@ -447,7 +461,7 @@ body {
     width: 322px;
     height: 72px;
     border-radius: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     padding: 0;
     display: flex;
@@ -458,7 +472,7 @@ body {
   .FlexBoxResto i {
     display: flex;
     flex-direction: row;
-    color: #7E7E7E;
+    color: #7e7e7e;
     width: 18px;
     height: 18px;
     font-size: 16px;
@@ -468,8 +482,8 @@ body {
     align-content: center;
     width: 24px;
     height: 24px;
-    color: #FFF;
-    background: #9356DC;
+    color: #fff;
+    background: #9356dc;
     border-radius: 50%;
     margin-left: -10px;
   }
@@ -485,7 +499,7 @@ body {
     margin-left: -17px;
   }
   .FlexBoxResto .color {
-    color: #9356DC;
+    color: #9356dc;
   }
   .card .fa-heart {
     font-size: 180%;
@@ -503,7 +517,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient(#9356dc, #ff79da);
     opacity: 0;
     display: flex;
     justify-content: flex-end;
@@ -536,7 +550,7 @@ body {
   .Footer h1 {
     width: 137px;
     height: 27px;
-    color: #FFF;
+    color: #fff;
     margin-right: 25px;
     font-family: "Shrikhand";
     font-style: normal;
@@ -546,7 +560,7 @@ body {
   .Footer .AideFooter {
     display: flex;
     flex-direction: row;
-    color: #FFF;
+    color: #fff;
     gap: 10px;
     font-size: 14px;
   }
@@ -587,17 +601,17 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 17px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 100%;
   }
   .bouton {
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
     width: 218px;
     height: 50px;
     border-radius: 25px;
     border-width: 0px;
     border-left-style: solid;
-    color: #FFF;
+    color: #fff;
     margin-bottom: 57px;
     align-items: center;
     display: grid;
@@ -609,10 +623,10 @@ body {
   }
   .bouton:visited {
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
   }
   .Backgroundhaut {
-    background: #F6F6F6;
+    background: #f6f6f6;
     width: 100%;
     display: grid;
     justify-content: center;
@@ -638,7 +652,7 @@ body {
     width: 85%;
     height: 72px;
     border-radius: 20px;
-    background: #F6F6F6;
+    background: #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     padding: 0;
     display: flex;
@@ -677,7 +691,7 @@ body {
     margin-left: 20px;
   }
   .FlexBoxCard {
-    background: var(--Background, #F6F6F6);
+    background: var(--Background, #f6f6f6);
     margin: 0;
   }
   .Box1 {
@@ -693,7 +707,7 @@ body {
   .card {
     display: block;
     border-radius: 15px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     margin-left: 0px;
     border-radius: 20px;
@@ -717,7 +731,7 @@ body {
   .card .fas {
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient(#9356dc, #ff79da);
     opacity: 0;
     display: flex;
     justify-content: flex-end;
@@ -740,7 +754,7 @@ body {
     position: absolute;
     margin-left: 49%;
     margin-top: 30px;
-    background: var(--Green, #99E2D0);
+    background: var(--Green, #99e2d0);
     width: 80px;
     height: 29px;
     justify-content: center;
@@ -775,7 +789,7 @@ body {
     padding-top: 22px;
     padding-left: 25px;
     margin-bottom: 16px;
-    color: #FFF;
+    color: #fff;
   }
   .Footer span {
     display: flex;
@@ -796,7 +810,7 @@ body {
     font-size: 16px;
   }
   .Footer .AideFooter p {
-    color: #FFF;
+    color: #fff;
     padding-left: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
