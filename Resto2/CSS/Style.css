@@ -19,9 +19,9 @@ body {
 }
 
 .BackButton {
-  position: absolute;
-  top: 3%;
   margin-left: 17px;
+  position: absolute;
+  top: 32px;
 }
 
 .Headerimg {
@@ -37,7 +37,7 @@ body {
 .cardposition .card {
   background-color: rgb(246, 246, 246);
   width: 990px;
-  height: 1225px;
+  height: 1230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +50,7 @@ body {
   margin-bottom: 40px;
   height: 41px;
   font-family: "Roboto";
+  white-space: nowrap;
 }
 .cardposition .title .fa-heart {
   margin-left: 90%;
@@ -57,7 +58,10 @@ body {
 }
 .cardposition .title .far {
   position: relative;
-  top: -37px;
+  margin-left: 21px;
+  bottom: 114px;
+  top: 7px;
+  font-size: 27px;
 }
 .cardposition .title .fas {
   background-clip: text;
@@ -66,10 +70,12 @@ body {
   background-image: linear-gradient(#9356DC, #FF79DA);
   opacity: 0;
   position: relative;
-  top: -78px;
-  bottom: 0;
+  margin-left: 0px;
+  font-size: 27px;
+  top: 7px;
+  left: -27px;
 }
-.cardposition .title:hover .fas {
+.cardposition .title .fas:hover {
   opacity: 1;
 }
 .cardposition .title h2 {
@@ -102,11 +108,17 @@ body {
   margin-top: 0;
   font-family: "Roboto";
   width: 76%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 .cardposition .Box_menu h4 {
   font-size: 18px;
   margin-bottom: 5.94px;
   font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .cardposition .Box_menu h5 {
   display: flex;
@@ -116,6 +128,7 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-transform: uppercase;
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
@@ -235,6 +248,7 @@ body {
   height: 114px;
   gap: 50px;
   padding-bottom: 30px;
+  font-family: "Roboto";
 }
 .Footer img {
   width: 11px;
@@ -297,8 +311,6 @@ body {
     margin-top: 30px;
   }
   .BackButton {
-    position: absolute;
-    top: 3%;
     margin-left: 17px;
   }
   .cardposition .card {
@@ -324,8 +336,9 @@ body {
   .cardposition .card .title .far {
     margin-left: 0;
     position: relative;
+    left: 10px;
     top: 7px;
-    left: 15px;
+    font-size: 27px;
   }
   .cardposition .card .title .fas {
     background-clip: text;
@@ -333,12 +346,13 @@ body {
     background-image: linear-gradient(#9356DC, #FF79DA);
     opacity: 0;
     position: relative;
+    left: -17px;
     top: 7px;
-    left: -23px;
+    font-size: 27px;
     bottom: 0;
     margin-left: 0;
   }
-  .cardposition .card .title:hover .fas {
+  .cardposition .card .title .fas:hover {
     opacity: 1;
   }
   .cardposition .card .title .ma-ligne {
@@ -446,7 +460,7 @@ body {
   .cardposition .card {
     width: 100%;
     margin: 0;
-    height: 1200px;
+    height: 1230px;
     margin-top: -35px;
   }
   .cardposition .card .title {
@@ -457,7 +471,7 @@ body {
     margin-left: 24px;
   }
   .cardposition .card .title .fas {
-    left: -21px;
+    left: -17px;
   }
   .cardposition .card h2 {
     display: flex;
@@ -556,52 +570,6 @@ body {
     gap: 10px;
     flex-direction: column;
     padding-left: 0px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .cardposition .card {
-    width: 100%;
-    margin: 0;
-    height: 1200px;
-    margin-top: -35px;
-  }
-  .cardposition .card .title {
-    display: flex;
-    margin-top: 32px;
-    margin-bottom: 40px;
-    align-self: flex-start;
-    margin-left: 24px;
-  }
-  .cardposition .card .title .fas {
-    left: -19px;
-  }
-  .cardposition .card h2 {
-    display: flex;
-    gap: 10px;
-    font-size: 24px;
-    width: 291.333px;
-  }
-  .cardposition .card .Box_menu {
-    width: 90%;
-  }
-  .cardposition .card .Box_menu .menu {
-    width: 100%;
-  }
-  .cardposition .card .Box_menu .menu .title {
-    width: 296px;
-  }
-  .cardposition .card .Box_menu .menu .menu_check {
-    margin-top: -60px;
-  }
-  .cardposition .card .Box_menu .menu h5 {
-    margin-left: 0;
-  }
-  .cardposition .card .Box_menu .menu .ma-ligne {
-    margin-left: 0;
-  }
-  .cardposition .card .Box_menu .menu .menu_price {
-    bottom: 0px;
-    top: 0px;
   }
 }
 

@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 117%;
   animation: hiden 3s forwards;
   position: absolute;
   width: 100%;
@@ -320,9 +320,10 @@ body {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: -25px;
+  top: -22px;
   margin-bottom: -56px;
   margin-right: 14px;
+  left: -2px;
 }
 .card .fas {
   background-clip: text;
@@ -358,7 +359,7 @@ body {
   position: absolute;
   margin-top: 20px;
   background: #99e2d0;
-  width: 61px;
+  width: 80px;
   height: 29px;
   justify-content: center;
   border-radius: 5px;
@@ -398,6 +399,7 @@ body {
   width: 100%;
   height: 114px;
   gap: 50px;
+  font-family: "Roboto";
   padding-bottom: 30px;
 }
 .Footer img {
@@ -425,7 +427,6 @@ body {
   line-height: normal;
 }
 .Footer .AideFooter p {
-  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
 }
@@ -565,7 +566,6 @@ body {
     font-size: 14px;
   }
   .Footer .AideFooter p {
-    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
   }
