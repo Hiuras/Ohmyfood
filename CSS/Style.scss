@@ -9,10 +9,7 @@ $font-family_2: "Shrikhand";
 $background-color_1: #eaeaea;
 $background-color_2: #f6f6f6;
 $background-color_footer: #353535;
-$btn: var(
-  --Button-Gradient,
-  linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-);
+$btn: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -30,7 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 117%;
+  height: 115.4%;
   animation: hiden 3s forwards;
   position: absolute;
   width: 100%;
@@ -325,7 +322,7 @@ line-height: normal;
     margin-top: 12px;
   }
   .fa-heart {
-    font-size: 180%;
+    font-size: 140%;
   }
   .far {
     display: flex;
@@ -333,25 +330,27 @@ line-height: normal;
     position: relative;
     top: -22px;
     margin-bottom: -56px;
-    margin-right: 14px;
+    margin-right: 0;
     left: -2px;
-    
   }
   .fas {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(#9356dc, #ff79da);
+    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     opacity: 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
     bottom: 25px;
-    right: 47px;
+    right: 35px;
     width: 33px;
+    top: -22px;
+    transition: opacity .5s;
   }
   .fas:hover {
     opacity: 1;
+    transition-duration: .5s;
   }
 }
 
@@ -412,7 +411,6 @@ line-height: normal;
   height: 114px;
   gap: 50px;
   font-family: $font-family_1;
-  padding-bottom: 30px;
   img {
     width: 11px;
     height: 13px;
