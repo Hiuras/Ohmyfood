@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
 body {
   max-width: 1440px;
   width: 100%;
@@ -148,6 +153,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
 }
 .bouton:hover {
   opacity: 70%;
@@ -195,6 +201,7 @@ body {
   align-items: center;
   gap: 25px;
   border: 0;
+  cursor: pointer;
 }
 .FlexBoxResto i {
   display: flex;

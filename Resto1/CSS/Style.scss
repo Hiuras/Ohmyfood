@@ -12,6 +12,11 @@ $animationbouton: var(--Button-Gradient,linear-gradient(193deg, #9356dc -11.44%,
 $btn:linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
 body {
   max-width: 1440px;
   width: 100%;
@@ -248,6 +253,7 @@ body {
   margin-bottom: 40px;
   margin-top: 40px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   &:hover {
     opacity: 70%;
     transition-duration: 1s;

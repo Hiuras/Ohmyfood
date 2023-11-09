@@ -13,6 +13,11 @@ $btn: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
 body {
   max-width: 1440px;
   width: 100%;
@@ -160,6 +165,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
   &:hover {
     opacity: 70%;
     transition-duration: 1s;
@@ -206,6 +212,7 @@ line-height: normal;
   align-items: center;
   gap: 25px;
   border: 0;
+  cursor: pointer;
   i {
     display: flex;
     flex-direction: row;
