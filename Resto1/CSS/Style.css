@@ -377,7 +377,7 @@ body {
     margin-top: -77px;
   }
   .bouton {
-    background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     width: 218px;
     height: 50px;
     border-radius: 25px;
@@ -510,17 +510,21 @@ body {
     top: 0px;
   }
   .cardposition .card .Box_menu .menu p, .cardposition .card .Box_menu .menu h4 {
-    width: 68%;
+    width: 82%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: width 0.5s ease;
+  }
+  .cardposition .card .Box_menu .menu:hover p, .cardposition .card .Box_menu .menu:hover h4 {
+    width: 62%;
   }
   .btn {
     display: flex;
     justify-content: center;
   }
   .btn .bouton {
-    background: var(--Button-Gradient, linear-gradient(3deg, #9356dc -11.44%, #ff79da 123.93%));
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     width: 218px;
     height: 50px;
     border-radius: 25px;
