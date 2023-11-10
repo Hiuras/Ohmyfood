@@ -219,7 +219,7 @@ body {
 }
 
 .bouton {
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   width: 186px;
   height: 50px;
   border-radius: 25px;
