@@ -219,8 +219,6 @@ body {
 
 .bouton {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  width: 186px;
-  height: 50px;
   border-radius: 25px;
   border-width: 0px;
   border-left-style: solid;
@@ -239,12 +237,18 @@ body {
   transition-duration: 1s;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
 }
-.bouton p {
+.bouton .button-text {
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
+  height: 50px;
 }
 
 .Footer {

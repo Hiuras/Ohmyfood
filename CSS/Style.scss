@@ -221,11 +221,12 @@ line-height: normal;
     height: 18px;
     font-size: 16px;
     padding-right: 10px;
-	margin-top: 2px;
+	  margin-top: 2px;
   }
   span {
     display: grid;
     align-content: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
     color: $color_3;
@@ -310,6 +311,7 @@ line-height: normal;
       font-size: 18px;
       font-family: $font-family_1;
       color: #000;
+      margin-bottom: -20px;
     }
     p {
       font-size: 17px;
@@ -335,7 +337,8 @@ line-height: normal;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: -22px;
+    top: 7px;
+    height: 24.4px;
     margin-bottom: -56px;
     margin-right: 0;
     left: -2px;
@@ -352,7 +355,7 @@ line-height: normal;
     bottom: 25px;
     right: 35px;
     width: 33px;
-    top: -22px;
+    top:  7px;
     transition: opacity .5s;
   }
   .fas:hover {
@@ -529,7 +532,7 @@ line-height: normal;
       display: flex;
       justify-content: flex-end;
       position: relative;
-      top: -25px;
+      top: 7px;
       margin-bottom: -56px;
       margin-right: 14px;
       left: 20px;
@@ -546,7 +549,7 @@ line-height: normal;
       bottom: 25px;
       left: -27px;
       width: 33px;
-      top: -25px;
+      top: 7px;
     }
     .fas:hover {
       opacity: 1;
@@ -771,7 +774,7 @@ line-height: normal;
     bottom: 25px;
     right: 14px;
     left: -27px;
-    top: -25px;
+    top: 7px;
   }
 
   .Card_Title {
