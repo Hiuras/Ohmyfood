@@ -116,10 +116,15 @@ body {
 	h4 {
 		font-family: $font-family_1;
 		font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
 	}
+  .fa-solid {
+    display: flex;
+    align-self: center;
+    color:#353535;
+  }
 }
 .Backgroundhaut {
   display: grid;
@@ -135,7 +140,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-	color: #000;
+	  color: #000;
   }
   p {
     height: 46px;
