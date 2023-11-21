@@ -323,6 +323,7 @@ body {
       font-style: normal;
       font-weight: 300;
       line-height: normal;
+      font-family: $font-family_1;
       color: #000;
     }
     .positionheart {
@@ -598,9 +599,6 @@ body {
       p {
         font-size: 16px;
         font-style: normal;
-      }
-      span {
-        padding-top: 14px;
       }
     }
     .BoxFooter {
